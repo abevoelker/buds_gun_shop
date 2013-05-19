@@ -28,6 +28,20 @@ class ProductSpec < MiniTest::Spec
 
     end
 
+    describe 'non-existent' do
+
+      before do
+        VCR.use_cassette('invalid_product') do
+          @product = BudsGunShop::Product.find(454564656)
+        end
+      end
+
+      it "should be nil" do
+        @product.must_be :nil?
+      end
+
+    end
+
     describe 'in-stock' do
 
       before do
