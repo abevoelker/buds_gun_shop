@@ -15,6 +15,7 @@ Gem::Specification.new do |s|
   s.add_dependency "mechanize",   ">= 2.3"
   s.add_dependency "andand"
   s.add_dependency "money",       ">= 5.0"
+  s.add_dependency "celluloid",   ">= 0.13"
 
   s.add_development_dependency "bundler",    "~> 1.0"
   s.add_development_dependency "minitest",   "~> 4.1"
