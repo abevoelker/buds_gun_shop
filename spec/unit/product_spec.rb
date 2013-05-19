@@ -4,12 +4,28 @@ class ProductSpec < MiniTest::Spec
 
   describe 'Product' do
 
-    before do
-      @product = BudsGunShop::Product.new(:item_no => 'foo')
+    describe 'built without any values' do
+
+      before do
+        @product = BudsGunShop::Product.new
+      end
+
+      it "should not be valid" do
+        @product.wont_be :valid?
+      end
+
     end
 
-    it "should be valid" do
-      @product.must_be :valid?
+    describe 'built with just item_no' do
+
+      before do
+        @product = BudsGunShop::Product.new(:item_no => 'foo')
+      end
+
+      it "should be valid" do
+        @product.must_be :valid?
+      end
+
     end
 
     describe 'in-stock' do
