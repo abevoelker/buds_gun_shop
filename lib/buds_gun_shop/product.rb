@@ -47,7 +47,7 @@ module BudsGunShop
     end
 
     def self.find(item_no, session=Session.new)
-      Product.new(item_no: item_no).reload(session)
+      new(item_no: item_no).reload(session)
     end
 
   end
