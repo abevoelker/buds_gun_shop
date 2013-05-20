@@ -40,6 +40,18 @@ class ManufacturerSpec < MiniTest::Spec
 
     end
 
+    describe 'built with name and id' do
+
+      before do
+        @manufacturer = BudsGunShop::Manufacturer.new(:name => 'Foo', :id => '123')
+      end
+
+      it "should be valid" do
+        @manufacturer.must_be :valid?
+      end
+
+    end
+
     describe 'fetching all manufacturers' do
 
       before do
