@@ -1,0 +1,2800 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.budsgunshop.com/catalog/ajax/categories.php
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip,deflate,identity
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Mechanize/2.6.0 Ruby/2.0.0p0 (http://github.com/sparklemotion/mechanize/)
+      Accept-Charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      Accept-Language:
+      - en-us,en;q=0.5
+      Host:
+      - www.budsgunshop.com
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 300
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - cloudflare-nginx
+      Date:
+      - Mon, 20 May 2013 02:56:03 GMT
+      Content-Type:
+      - text/xml
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d1e8c6937b56aa5143788ab36c17fbdae1369018562949; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.budsgunshop.com
+      - __cfduid=ddf8653614d21f1daf18e39277483d8191369018562; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.budsgunshop.com
+      - cookie_test=please_accept_for_session; expires=Wed, 19-Jun-2013 02:56:03 GMT;
+        path=/catalog/; domain=budsgunshop.com
+      Vary:
+      - Accept-Encoding
+      Cf-Ray:
+      - 715c062655d0168
+      Content-Encoding:
+      - gzip
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA7zQ32uDMBAH8Pf8FeJr6aztVlO4WvajbHsYhbk9F9HThqUJ
+        JLG4/34615qC7mF0viS5+x7hw8Gq3HPngEozKZaufzVxHRSJTJnIl+5ztBlT
+        erMY++4qJJDEBnOpGOq2+KyeLA0pvQavugmIeI/hpv7RyOTDeSyEBu+7SQBL
+        o+KdwqwdGDUDbUJAo0i3Rm4LxcMJeHZJoD6FFAheUzPNMc5Co4qq9VMQ8Czd
+        OXQeUBt6z6VGWZg+5zEfmunPgqntfFvfvjh37w9Rh7HORk02mI/6Z7x1mfBC
+        swP27fE0MPQip77tfIpFmncL2+ivtt8Ys7nNeGUZxy7EMfgXQmATop00PZto
+        o4syvgAAAP//vFjBbptAEP2Vvc8hxo3TcHRxW6EmimunqXJcw9peCVi0C6ma
+        r++AMWbSsaUqZW+W3kM8z868ectxAGfEKX44lZ5rmgZ7Z79cVkIOZZ7ndaEr
+        9EFGyhAcQ0swDa55MSKSTok7U3EVOtGgocGB5tFMiQs8o1Huzx1mC/qe/jCY
+        DQXezRfP51y0wd7popdL9YEoUdtKNJaDa5ATgzD0sL+tE8yIykhmemtsoaWI
+        TF5mWhYVtyR7Ggxo/lRPaBtGmXROxHHM7nPEoMXGOOUpdZQkUc61gYmb3SE6
+        hpgwJIafmFI5cSUeykonrO+3DIAjYQxNt6RA6AZiLbdseRCDDhulOAFR8qlO
+        nVjXtsSUwohpYOhhf509DWhaNYXTuyJX/BgOUY/TR88Uq/SiX2R29TlXdod3
+        id9iaVUprUoL7Heu77on+geAPuDR/kLyV37uDaYxmSlG9AAbZU5oURem3uDr
+        KmnFZVM5EeG/+Mu/XwwmZIPc16+vmcqMPLPo3uAeu5Ym8sga5zbmF3sHPGH+
+        gsuMBJel1YkSC2tKEVcq51S2FGgo0FG8if14c/2Xlx4Uf69NxfZpa6gHyUeO
+        vxalN6GVcsrizfXBYg+eS68dCVqS948Bk9mEFBhTqniKl1xdEYIW8rkASNDA
+        t4sv8/WjeFzNo2+MRiRAQ4CO4NHfb6dvlS60S0zN7tNG5wn2154hEbmSxU6J
+        e5Vv0CH3umS7s+EA4fiTe0NOf1qkYo4RJG1iiFiYLJOWUYw06GlwpHm0AOJY
+        XzXexiJpUzaIIggdOKLA4+/26+ofAAAA//8DAEUqu86XFQAA
+    http_version: 
+  recorded_at: Mon, 20 May 2013 02:56:04 GMT
+- request:
+    method: get
+    uri: http://www.budsgunshop.com/catalog/ajax/categories.php?cID=21
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip,deflate,identity
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Mechanize/2.6.0 Ruby/2.0.0p0 (http://github.com/sparklemotion/mechanize/)
+      Accept-Charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      Accept-Language:
+      - en-us,en;q=0.5
+      Host:
+      - www.budsgunshop.com
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 300
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - cloudflare-nginx
+      Date:
+      - Mon, 20 May 2013 02:56:03 GMT
+      Content-Type:
+      - text/xml
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=da3ffe40f4164823bc92a00640604e9681369018563196; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.budsgunshop.com
+      - __cfduid=dcce13ffe2c8ae7f2ab1186a3d2ec89b61369018563; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.budsgunshop.com
+      - cookie_test=please_accept_for_session; expires=Wed, 19-Jun-2013 02:56:03 GMT;
+        path=/catalog/; domain=budsgunshop.com
+      Vary:
+      - Accept-Encoding
+      Cf-Ray:
+      - 715c063fd210168
+      Content-Encoding:
+      - gzip
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        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
+    http_version: 
+  recorded_at: Mon, 20 May 2013 02:56:04 GMT
+- request:
+    method: get
+    uri: http://www.budsgunshop.com/catalog/ajax/categories.php?cID=21_49
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip,deflate,identity
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Mechanize/2.6.0 Ruby/2.0.0p0 (http://github.com/sparklemotion/mechanize/)
+      Accept-Charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      Accept-Language:
+      - en-us,en;q=0.5
+      Host:
+      - www.budsgunshop.com
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 300
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - cloudflare-nginx
+      Date:
+      - Mon, 20 May 2013 02:56:03 GMT
+      Content-Type:
+      - text/xml
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d40bbadf9c24c12ba8d8b56432f158b3a1369018563430; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.budsgunshop.com
+      - __cfduid=dcce13ffe2c8ae7f2ab1186a3d2ec89b61369018563; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.budsgunshop.com
+      - cookie_test=please_accept_for_session; expires=Wed, 19-Jun-2013 02:56:03 GMT;
+        path=/catalog/; domain=budsgunshop.com
+      Vary:
+      - Accept-Encoding
+      Cf-Ray:
+      - 715c06576370168
+      Content-Encoding:
+      - gzip
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA8SU3WrDIBiGz72KkNPQWUe7pvDVsp+D7WgjvYDgki+ZzOhQ
+        03V3P9uUJZAd7AfaE/EVH+ThVWG9a1S0Reuk0auYXUzjCHVhSqnrVfyweZyk
+        6Xw5YfGaEyiEx9pYia4PH2EqS37J8tkyZ2wBNCQCWjTIs7ZGG90oUby+mfcy
+        zDPcGrU/DehhBwHceSteLFb8XuiybrWjB6wbkwGcDOCeIuBQl7k3eWsVnwId
+        RgL7URuNQLssnUJRcW/bsHQMBOhA5juvxXysdYvao62kxehJOm/Uj516Mvki
+        Ty10NRa6M+2zwui68OEq/L6pDk86/JxdzcZqmWz+UtQRO1tLjKVjl014mf+o
+        qcNPWxMdfhyfAAAA//8DANOjlxZyBAAA
+    http_version: 
+  recorded_at: Mon, 20 May 2013 02:56:04 GMT
+- request:
+    method: get
+    uri: http://www.budsgunshop.com/catalog/ajax/categories.php?cID=21_39
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip,deflate,identity
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Mechanize/2.6.0 Ruby/2.0.0p0 (http://github.com/sparklemotion/mechanize/)
+      Accept-Charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      Accept-Language:
+      - en-us,en;q=0.5
+      Host:
+      - www.budsgunshop.com
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 300
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - cloudflare-nginx
+      Date:
+      - Mon, 20 May 2013 02:56:03 GMT
+      Content-Type:
+      - text/xml
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d3033ddfe7ae7d7d113be2dde7cf4d9071369018563635; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.budsgunshop.com
+      - __cfduid=dcce13ffe2c8ae7f2ab1186a3d2ec89b61369018563; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.budsgunshop.com
+      - cookie_test=please_accept_for_session; expires=Wed, 19-Jun-2013 02:56:03 GMT;
+        path=/catalog/; domain=budsgunshop.com
+      Vary:
+      - Accept-Encoding
+      Cf-Ray:
+      - 715c066be680168
+      Content-Encoding:
+      - gzip
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA7yTsWrDMBCGdz2FMaSLSRU7tI3pRRkKpc3SUg8ejbDPjkA+
+        BUkO6dvXaZvGgydDs4j7Dv5DHzrB5tjq4IDWKUPrML5dhAFSaSpFzTp8zd7m
+        q9VdOo/DjWBQSo+NsQrdBT77UlUiiYtlWqRJArwnBiRbFNmNbPePebANnm3P
+        Dvh3mwEevZU7i7V4kVQ1HTmetcrvollyH+XonCGe9XUebaNz9JJh4JCqwpui
+        s1osgA+RwekkQwj8h5XTKGvhbde3foEBH9x/TOVhOWbyjrY2tpVUYvCE5NFO
+        cBoMic5Drm0Xj9op542e8kx/yWt7jO7bBx6MPu30BJNB9h9d+PArfQEAAP//
+        AwCOHaQDhAMAAA==
+    http_version: 
+  recorded_at: Mon, 20 May 2013 02:56:05 GMT
+- request:
+    method: get
+    uri: http://www.budsgunshop.com/catalog/ajax/categories.php?cID=21_50
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip,deflate,identity
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Mechanize/2.6.0 Ruby/2.0.0p0 (http://github.com/sparklemotion/mechanize/)
+      Accept-Charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      Accept-Language:
+      - en-us,en;q=0.5
+      Host:
+      - www.budsgunshop.com
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 300
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - cloudflare-nginx
+      Date:
+      - Mon, 20 May 2013 02:56:03 GMT
+      Content-Type:
+      - text/xml
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d15770b2200c4253f8ac37731164eb7e01369018563845; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.budsgunshop.com
+      - __cfduid=dcce13ffe2c8ae7f2ab1186a3d2ec89b61369018563; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.budsgunshop.com
+      - cookie_test=please_accept_for_session; expires=Wed, 19-Jun-2013 02:56:03 GMT;
+        path=/catalog/; domain=budsgunshop.com
+      Vary:
+      - Accept-Encoding
+      Cf-Ray:
+      - 715c06806750168
+      Content-Encoding:
+      - gzip
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA7SRPQvCQAyG9/sVpavotWLBQnquOinqXo421oMzB/dR6r+3
+        arEdHFxckjwhgfdNYNPddNSidcpQEaeLJI6QKlMraop4d9rP1+ssn6fxRjCo
+        pMfGWIVuhHtfqlos0zJLylWeAe+JAckbirMMNrjooJw32gF/NRlg5628WryI
+        raS6CeT4e3JIs8/COMnAIdWlN2WwWiTAp8jgGckQAn+zchrlRXgb+tYADPhE
+        83f5qy/yj9ga/bzQ7wYmK3+0wKf/eAAAAP//AwDF4aOuyQEAAA==
+    http_version: 
+  recorded_at: Mon, 20 May 2013 02:56:05 GMT
+- request:
+    method: get
+    uri: http://www.budsgunshop.com/catalog/ajax/categories.php?cID=36
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip,deflate,identity
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Mechanize/2.6.0 Ruby/2.0.0p0 (http://github.com/sparklemotion/mechanize/)
+      Accept-Charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      Accept-Language:
+      - en-us,en;q=0.5
+      Host:
+      - www.budsgunshop.com
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 300
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - cloudflare-nginx
+      Date:
+      - Mon, 20 May 2013 02:56:04 GMT
+      Content-Type:
+      - text/xml
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=dae7d5b87be422a3cf9f2060b44f3ff011369018564081; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.budsgunshop.com
+      - __cfduid=df25dcdd75d3b3af61d9bb05718128a131369018564; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.budsgunshop.com
+      - cookie_test=please_accept_for_session; expires=Wed, 19-Jun-2013 02:56:04 GMT;
+        path=/catalog/; domain=budsgunshop.com
+      Vary:
+      - Accept-Encoding
+      Cf-Ray:
+      - 715c06985e20168
+      Content-Encoding:
+      - gzip
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        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
+        //8DABqjFu8AQwAA
+    http_version: 
+  recorded_at: Mon, 20 May 2013 02:56:05 GMT
+- request:
+    method: get
+    uri: http://www.budsgunshop.com/catalog/ajax/categories.php?cID=36_42
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip,deflate,identity
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Mechanize/2.6.0 Ruby/2.0.0p0 (http://github.com/sparklemotion/mechanize/)
+      Accept-Charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      Accept-Language:
+      - en-us,en;q=0.5
+      Host:
+      - www.budsgunshop.com
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 300
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - cloudflare-nginx
+      Date:
+      - Mon, 20 May 2013 02:56:04 GMT
+      Content-Type:
+      - text/xml
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=dd4aeecacdf9b1b3af27f84c2ef664dc91369018564295; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.budsgunshop.com
+      - __cfduid=df25dcdd75d3b3af61d9bb05718128a131369018564; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.budsgunshop.com
+      - cookie_test=please_accept_for_session; expires=Wed, 19-Jun-2013 02:56:04 GMT;
+        path=/catalog/; domain=budsgunshop.com
+      Vary:
+      - Accept-Encoding
+      Cf-Ray:
+      - 715c06ad5f80168
+      Content-Encoding:
+      - gzip
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA7yS3UrDMBhA7/MUoTBvypr+2Lqybx3djXgl6AOU0H6tgTSR
+        pNX69mZzbFVkFwO9CTkhOeHAB9upl/QNjRVabbwoCD2KqtaNUN3Ge3h+XK5W
+        ab6MvG1BoOYDdtoItGf4cFvRFElW3cZVlgNzQEDxHotS4sRVg4aWprc0SEO6
+        Q/0+ypbe8P51bbBbAztcJYDTYPiLwbZ4Eq1Ey06v/f3rH+g7mX+U+Ys4c6pF
+        sgN2thCwqJpq0NVoZBECmyOB/aq0QmBfLKxE3haDGd3REQiwWeRvvXlydyE4
+        C1J6b9y3KK/NdAr/pPjnuCiML8SVdY3WHobh2rhvij+MY/O5/QQAAP//AwA9
+        nFG48QIAAA==
+    http_version: 
+  recorded_at: Mon, 20 May 2013 02:56:05 GMT
+- request:
+    method: get
+    uri: http://www.budsgunshop.com/catalog/ajax/categories.php?cID=36_58
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip,deflate,identity
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Mechanize/2.6.0 Ruby/2.0.0p0 (http://github.com/sparklemotion/mechanize/)
+      Accept-Charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      Accept-Language:
+      - en-us,en;q=0.5
+      Host:
+      - www.budsgunshop.com
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 300
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - cloudflare-nginx
+      Date:
+      - Mon, 20 May 2013 02:56:04 GMT
+      Content-Type:
+      - text/xml
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d755e09ab3636b9069916f3b14a5c42a21369018564493; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.budsgunshop.com
+      - __cfduid=df25dcdd75d3b3af61d9bb05718128a131369018564; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.budsgunshop.com
+      - cookie_test=please_accept_for_session; expires=Wed, 19-Jun-2013 02:56:04 GMT;
+        path=/catalog/; domain=budsgunshop.com
+      Vary:
+      - Accept-Encoding
+      Cf-Ray:
+      - 715c06c1bfc0168
+      Content-Encoding:
+      - gzip
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA8SUXWuDMBSG7/MrgrfiUufsFE4t7d1gMJg/QESPbWhMIMat
+        +/dLtR9eOEaF4k3MqzzkfTwirI+1oF+oG67kyvGfFg5FWaiSy93KeUs/vCgK
+        Y8931gmBIje4U5pjcws/dsvLJFhmYZTFQQjMJgIyrzEB1l0I4NHofK+xSj55
+        JbBhW62+pT0C2O0RgQZlmRmVtVpYdpgInFapJALrM28E5lVidGtvnQMBNmg1
+        VtB/fhkWvNSgWyUM3RTGvgTaV/y/+3Xjnmi3p90L/ZfX4lFir+NibXGoc32Y
+        YnVG51Najiq9o/1cpw+rw2efVjiqlmLNvU1r1ASvKzuXVByMzyu1i0Ca7pW5
+        y6fD3B57oAob/tV+AQAA//8DAFjmBdMPBQAA
+    http_version: 
+  recorded_at: Mon, 20 May 2013 02:56:05 GMT
+- request:
+    method: get
+    uri: http://www.budsgunshop.com/catalog/ajax/categories.php?cID=36_63
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip,deflate,identity
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Mechanize/2.6.0 Ruby/2.0.0p0 (http://github.com/sparklemotion/mechanize/)
+      Accept-Charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      Accept-Language:
+      - en-us,en;q=0.5
+      Host:
+      - www.budsgunshop.com
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 300
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - cloudflare-nginx
+      Date:
+      - Mon, 20 May 2013 02:56:04 GMT
+      Content-Type:
+      - text/xml
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=ded2b6e4355a449a7fe0996b8dee91abc1369018564719; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.budsgunshop.com
+      - __cfduid=df25dcdd75d3b3af61d9bb05718128a131369018564; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.budsgunshop.com
+      - cookie_test=please_accept_for_session; expires=Wed, 19-Jun-2013 02:56:05 GMT;
+        path=/catalog/; domain=budsgunshop.com
+      Vary:
+      - Accept-Encoding
+      Cf-Ray:
+      - 715c06d76a70168
+      Content-Encoding:
+      - gzip
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA7SRPwvCMBDF93yK0rVorEVt4ZoinZwExaVLKPaqgTSBJJX6
+        7a1/sEVcHFyO+z3uwXscZF0jvQsaK7RK/XA68z1UR10JdUr9zX47ieNFMgn9
+        jBE4lg5P2gi0A1z7VVQsWvJlxJNVCLQnAqpskOWFl6NyaGphEOhDI4CdM+XZ
+        YM12opZoaV4Eh/06GGhsGq4JWFQVd5q3RrIZ0DESuE+lVW95srASy5o50/bS
+        CwjQUezvDeYfDXai+TH+2/HH7HT8ixsAAAD//wMAaQ5D7MUBAAA=
+    http_version: 
+  recorded_at: Mon, 20 May 2013 02:56:06 GMT
+- request:
+    method: get
+    uri: http://www.budsgunshop.com/catalog/ajax/categories.php?cID=36_107
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip,deflate,identity
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Mechanize/2.6.0 Ruby/2.0.0p0 (http://github.com/sparklemotion/mechanize/)
+      Accept-Charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      Accept-Language:
+      - en-us,en;q=0.5
+      Host:
+      - www.budsgunshop.com
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 300
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - cloudflare-nginx
+      Date:
+      - Mon, 20 May 2013 02:56:04 GMT
+      Content-Type:
+      - text/xml
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=de9b352891d8c991e908eb19709608ff71369018564924; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.budsgunshop.com
+      - __cfduid=df25dcdd75d3b3af61d9bb05718128a131369018564; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.budsgunshop.com
+      - cookie_test=please_accept_for_session; expires=Wed, 19-Jun-2013 02:56:04 GMT;
+        path=/catalog/; domain=budsgunshop.com
+      Vary:
+      - Accept-Encoding
+      Cf-Ray:
+      - 715c06ecdf00168
+      Content-Encoding:
+      - gzip
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA7yRwYrCMBCG73mK0mvRtCyrLYyRxYt7EuoDlGCn3UA7WSZR
+        9O2NWmlh9yheQr75yc98BNbnvotOyM5YWsXZPI0jpIOtDbWr+Hu/m+X5ZzHL
+        4rUScNAeW8sG3QiXcDW1+lhUWbqsijwFGVAA6R7VFokv0QbJIzeGMSpN06ED
+        eU8F4Nmz/mFs1COQ9wdJib+ofdgg+eLeJRs7H4KxKXk2jRUCHFJdeVsduVNh
+        jykKuJ1kCUE+2LgOdaM8H8NoAAFyovW/4bL4a1ia/hV6Q8073OT0L68AAAD/
+        /wMAKiflkwUCAAA=
+    http_version: 
+  recorded_at: Mon, 20 May 2013 02:56:06 GMT
+- request:
+    method: get
+    uri: http://www.budsgunshop.com/catalog/ajax/categories.php?cID=36_57
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip,deflate,identity
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Mechanize/2.6.0 Ruby/2.0.0p0 (http://github.com/sparklemotion/mechanize/)
+      Accept-Charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      Accept-Language:
+      - en-us,en;q=0.5
+      Host:
+      - www.budsgunshop.com
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 300
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - cloudflare-nginx
+      Date:
+      - Mon, 20 May 2013 02:56:05 GMT
+      Content-Type:
+      - text/xml
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d0035cbbc48e6763fb9473ede15a06b0a1369018565; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.budsgunshop.com
+      - __cfduid=d687d6f26757a8085c1e9e89320e714981369018565147; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.budsgunshop.com
+      - cookie_test=please_accept_for_session; expires=Wed, 19-Jun-2013 02:56:05 GMT;
+        path=/catalog/; domain=budsgunshop.com
+      Vary:
+      - Accept-Encoding
+      Cf-Ray:
+      - 715c070294c0168
+      Content-Encoding:
+      - gzip
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA8yTT2/CIBiH73wK0mvTYXVuNXnF6E47bakfoGnat0rCHwPU
+        uG8/urrJYYfNg/FC+EEe+D0hwOqkJD2idcLoZZI/TBKKujGt0Ltl8rp9y4pi
+        vsjyZMUJNLXHnbEC3SV8hKlo+eypmj9XiyIHFhIBXSvkGyM9XTc+HE1fUHu0
+        nbAI7GuTAJ68rfcWO16KTqJjJapwrTeaDWQ6kmlMXhACDnVbeVP1VvIJsDgS
+        GEZtdEDGLJzEuuPe9mHpHAiwSOJ3n1ns896rw3U+A3kXPo+xTynUUIOOdf/i
+        cSbSb+Lm/adx/23ola17b/75Gj/crd6CxT/nEwAA//8DAGqsqqtzAwAA
+    http_version: 
+  recorded_at: Mon, 20 May 2013 02:56:06 GMT
+- request:
+    method: get
+    uri: http://www.budsgunshop.com/catalog/ajax/categories.php?cID=36_59
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip,deflate,identity
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Mechanize/2.6.0 Ruby/2.0.0p0 (http://github.com/sparklemotion/mechanize/)
+      Accept-Charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      Accept-Language:
+      - en-us,en;q=0.5
+      Host:
+      - www.budsgunshop.com
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 300
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - cloudflare-nginx
+      Date:
+      - Mon, 20 May 2013 02:56:05 GMT
+      Content-Type:
+      - text/xml
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d0035cbbc48e6763fb9473ede15a06b0a1369018565; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.budsgunshop.com
+      - __cfduid=d8ad4b9efae7675aa45a88dd218e01e5a1369018565381; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.budsgunshop.com
+      - cookie_test=please_accept_for_session; expires=Wed, 19-Jun-2013 02:56:05 GMT;
+        path=/catalog/; domain=budsgunshop.com
+      Vary:
+      - Accept-Encoding
+      Cf-Ray:
+      - 715c071a96c0168
+      Content-Encoding:
+      - gzip
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA8SU0WqDMBhG7/MUwVvp0mx0VUhT2l0NBgN9ABH9tYGYQIyl
+        e/tFbdHhNuZg8ybkCzkJJ3yE7S+VxGcwtdBq59G7tYdBZToXqtx5z/HrKgg2
+        4Yp6e45YllootRFQD+HNTUXOHx6TTZgEa0ZcQEylFfCoKcHgJ1AWTCEM4ENj
+        tdRpezYj3RbE4GJNejJQ8EgUEmrSUf3oD6z/gR0gxGpQeWJ10hjJ3fXjiFg7
+        Kq2AkT6LWkJacGsat3QNiJGRy2dalH7vddTS4kNm3RPO9mpZ/8b+u9f91OsF
+        XBtm2XTEUg7bcKoQiep3fbuCi5ZtG3wtNLtoN6FlW0anRrF7Wgk4Pmn7M5Me
+        8HvgDw3I+JN7BwAA//8DAPVYLmoeBQAA
+    http_version: 
+  recorded_at: Mon, 20 May 2013 02:56:06 GMT
+- request:
+    method: get
+    uri: http://www.budsgunshop.com/catalog/ajax/categories.php?cID=36_62
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip,deflate,identity
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Mechanize/2.6.0 Ruby/2.0.0p0 (http://github.com/sparklemotion/mechanize/)
+      Accept-Charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      Accept-Language:
+      - en-us,en;q=0.5
+      Host:
+      - www.budsgunshop.com
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 300
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - cloudflare-nginx
+      Date:
+      - Mon, 20 May 2013 02:56:05 GMT
+      Content-Type:
+      - text/xml
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d0035cbbc48e6763fb9473ede15a06b0a1369018565; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.budsgunshop.com
+      - __cfduid=dceca5b90f975e91f79b8cd4a1d53bb9c1369018565585; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.budsgunshop.com
+      - cookie_test=please_accept_for_session; expires=Wed, 19-Jun-2013 02:56:05 GMT;
+        path=/catalog/; domain=budsgunshop.com
+      Vary:
+      - Accept-Encoding
+      Cf-Ray:
+      - 715c072e2d70168
+      Content-Encoding:
+      - gzip
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA7ySsQ6CMBCG9z4FYTVYUUFNzhrj5GQCD0AauGITaJO2Gn17
+        UQkwMOigS6/f5b/mu6Swu9WVd0VjpVZbP5zOfA9Vrgupyq1/TE/Beh1tgtDf
+        MQI5d1hqI9H2cG+usmCLOIvn2WYVA22IgOI1spRfeYnePnfN4xboq0kAb87w
+        s0HBEikqtPSda8uki/c5AhZVkTmdXUzFZkCHSOB5Kq0Q6JulrZAL5sylabVA
+        gA6Mx+WXI/IHVA6NkAY/9R9O/H2FaGSFRNbf+HfxH8rT4Vd6AAAA//8DADHl
+        +fqEAgAA
+    http_version: 
+  recorded_at: Mon, 20 May 2013 02:56:07 GMT
+- request:
+    method: get
+    uri: http://www.budsgunshop.com/catalog/ajax/categories.php?cID=36_763
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip,deflate,identity
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Mechanize/2.6.0 Ruby/2.0.0p0 (http://github.com/sparklemotion/mechanize/)
+      Accept-Charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      Accept-Language:
+      - en-us,en;q=0.5
+      Host:
+      - www.budsgunshop.com
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 300
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - cloudflare-nginx
+      Date:
+      - Mon, 20 May 2013 02:56:05 GMT
+      Content-Type:
+      - text/xml
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d0035cbbc48e6763fb9473ede15a06b0a1369018565; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.budsgunshop.com
+      - __cfduid=d4c2a40a47e6fc7f0e162eb94b0b8de121369018565782; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.budsgunshop.com
+      - cookie_test=please_accept_for_session; expires=Wed, 19-Jun-2013 02:56:05 GMT;
+        path=/catalog/; domain=budsgunshop.com
+      Vary:
+      - Accept-Encoding
+      Cf-Ray:
+      - 715c07429a70168
+      Content-Encoding:
+      - gzip
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA8SSz0vDMBTH7/krQkEvoabp7I/hW4bePAyHO3gspX3dAmki
+        SSbzv7dbJ+tBLwp6eeT7fbwPfCCwPPSavqHzyppFJG6SiKJpbKvMdhE9bp7i
+        sszmsYiWkkBTB9xap9BfwvvwVK2c5VWRz6p5UQIfIgFT9ygfrA70vgkDmz6r
+        TqMHfloQwENw9c5hJ8cF3/Qq7NhVmrMX9N4adu6PDDYy2CfjckzAo2mrYKu9
+        0zIBPo0EjtNYg8DHrLzGupPB7YfqHAjwics3WsVUa3Vd9693ayqyH1uthmrN
+        RPZvSiK5zb9wElmcpr+zOiH+wotP/+MHAAAA//8DALX6tfzJAgAA
+    http_version: 
+  recorded_at: Mon, 20 May 2013 02:56:07 GMT
+- request:
+    method: get
+    uri: http://www.budsgunshop.com/catalog/ajax/categories.php?cID=37
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip,deflate,identity
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Mechanize/2.6.0 Ruby/2.0.0p0 (http://github.com/sparklemotion/mechanize/)
+      Accept-Charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      Accept-Language:
+      - en-us,en;q=0.5
+      Host:
+      - www.budsgunshop.com
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 300
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - cloudflare-nginx
+      Date:
+      - Mon, 20 May 2013 02:56:06 GMT
+      Content-Type:
+      - text/xml
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d359599f2b1253405d55f017e9baf53161369018566; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.budsgunshop.com
+      - __cfduid=de9cf48df17797057a658815b13e023941369018566095; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.budsgunshop.com
+      - cookie_test=please_accept_for_session; expires=Wed, 19-Jun-2013 02:56:06 GMT;
+        path=/catalog/; domain=budsgunshop.com
+      Vary:
+      - Accept-Encoding
+      Cf-Ray:
+      - 715c07617a30168
+      Content-Encoding:
+      - gzip
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA7yTzWqEMBSF9z6FuBUbRcZRyGTo7GZV6HQvQe9omJiUm1im
+        ffra1l8KFrpwE865OQe+Gwg93hvpvgEaodXBix5CzwVV6FKo6uCdL09Bmu6y
+        IPKOzKEFt1BpFGAm895JUbJ4n2fJnpJOOlTxBtjj7caRkm/tULhb5DXClV1q
+        batWGdIHphuHGlBlbnXeomQhJXPr0K9TaQWU/HhhJPArs9h2o944lMy4fiOG
+        6QKxARQFV+4LL2wnpHtuXjVas4rdl/yh5I+lTVdJovkqJ24AUayBj5FNMaNs
+        gQkKpFzHHCJbYia7JSWCtXydso/8l/IPoDhdfKYT8g8LRR08a2OEO2CsEi4q
+        /lTZ8l2jOBzX+AQAAP//xFexboMwFPwV714iCCQdkYGCWjHQdsnmEldBLSYy
+        RFX+vi/FEF4Hx0Nj9jvp3vF87/gdo/2WkCxm3SPmTtaGAfrYLEpeopI8viVl
+        XuQmZQOSTkinRnrYSSZkf1JnksteKMl7SG+Ir0g1xp3QLIpYdGC5zeEQDVM3
+        XKlWkrRWgt+aQYPpFez0Q6wC9DJZ/hrFybNR8QhxazEKXgY36xMSy85iDV7I
+        4mCLrjTbWeUd2/1Dxt1Q5nnrubKYf52ttF2ASyWw56O4S5qjUK2y2gONXWgN
+        /grvKmhZRrka4VSkh55ZclLtUUCjnKolhCvgjbI1h07NcuQ4HWSNIjktSAY/
+        BT0cFZsFTwuq4Uut+cpHfThVXFYHY9GcIE5tDv25zAxOGXSdHm4fl3tS1tWB
+        q33XSpPwK4kCic5JLkfZbpDjWdsIEosPITthtTMXAtWEhbYmfECl6qlu3oWy
+        Ej9AF2vVG0idHwAAAP//xJpNT8JAEIb/yl4wkI0mlO94agiJTQCTLsp5wbE0
+        balpC8Z/7+62UMbDuh7cvZn4TPLuMM68M3ijOwiDeUBYsPSftKIVRxvOquL+
+        BM30ZXwU6dOvWC1jt5HMUG5X/Cy7cqJT2jJWHZ6HjOgKigRSrcyGsClyMEBj
+        ZSV2UfGhahfAlrEqdIRawRo+yeIYpbIrm/QDwdOGd9QUPOya17mYEfucdNWu
+        JyZzBWo97GlfUQfRjjdtw9R+2JE+x27HwPYv9P25Tnr9e6vDA+0CIWT1TNaK
+        bKF/uxt5SFUenUDYivcUyDx/0GqTKFUoVajdTxsn8xQZzmFFOvqLm2IvF57K
+        Mv6b9W9C3Dr/2QQ9g/Ezj+CeVXAGfe5/klbbNXZALI4I4yfDohE0VbQr/9af
+        TbH6VBgIsuBRCnrdkqMNZ1PxZIzaCsvi6kDuePbxSLZQitXDLO8yTAyXMa2D
+        nKV/gkwJC1e/Xk4F4+JOOsJCqxxEu9PqvCA2ZQ6HyIlu4iThRgWhSEdVMByh
+        kt4U/C2WB3G94BvK8tUZVcImDO7Zxg+1Wq+M1bTir9JeociP2jXvQlheoG9F
+        boFXByh2ZsfcK+1uenhY/S6Fr6Ybs31eaY+kNa2acMPa1Y7LYxuncnjM82zH
+        K7PsqwhaR7g6G+HqESvTAUqxLpHuCwv9nuE7LlFy25JxYsVy9J7RDF3ynmV5
+        Gz1CkXZEX35W/3zyDQAA//8DABm2F4a2IgAA
+    http_version: 
+  recorded_at: Mon, 20 May 2013 02:56:07 GMT
+- request:
+    method: get
+    uri: http://www.budsgunshop.com/catalog/ajax/categories.php?cID=37_65
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip,deflate,identity
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Mechanize/2.6.0 Ruby/2.0.0p0 (http://github.com/sparklemotion/mechanize/)
+      Accept-Charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      Accept-Language:
+      - en-us,en;q=0.5
+      Host:
+      - www.budsgunshop.com
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 300
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - cloudflare-nginx
+      Date:
+      - Mon, 20 May 2013 02:56:11 GMT
+      Content-Type:
+      - text/xml
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d0a661ce5b69ce573028d3767c8359ffe1369018571300; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.budsgunshop.com
+      - __cfduid=d7d95a2180c66c8add5d28dad9ceeb84f1369018571; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.budsgunshop.com
+      - cookie_test=please_accept_for_session; expires=Wed, 19-Jun-2013 02:56:11 GMT;
+        path=/catalog/; domain=budsgunshop.com
+      Vary:
+      - Accept-Encoding
+      Cf-Ray:
+      - 715c096ab310168
+      Content-Encoding:
+      - gzip
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA8SSsW7CMBCGdz+FlTUKB6oCQTqM2o2JIeocGXwES4kt2U5F
+        3h6TtiRILCzt4vPn83/yJxm3l7bhX+S8tmaTLGbzhJM5WqVNvUl25T4rinyd
+        LZKtYHiUgWrrNPkR+rjVSrytqmVerYslQiSGRrYk9nEufBpFjpdnG+rOeISh
+        w5Auwcmzo5P4bcEHOQpBwi02pNIxNV5n6MmoKtiqc42YI0yR4W011hDCN2vf
+        kDyJ4Lp49AMMYfL65yL5VKSkVmfvXbAvedxT/+mxevDQivih50N9SSUG0kOf
+        DvVPbGD62a4AAAD//wMAasAHhaYCAAA=
+    http_version: 
+  recorded_at: Mon, 20 May 2013 02:56:12 GMT
+- request:
+    method: get
+    uri: http://www.budsgunshop.com/catalog/ajax/categories.php?cID=37_130
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip,deflate,identity
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Mechanize/2.6.0 Ruby/2.0.0p0 (http://github.com/sparklemotion/mechanize/)
+      Accept-Charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      Accept-Language:
+      - en-us,en;q=0.5
+      Host:
+      - www.budsgunshop.com
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 300
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - cloudflare-nginx
+      Date:
+      - Mon, 20 May 2013 02:56:11 GMT
+      Content-Type:
+      - text/xml
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d7d95a2180c66c8add5d28dad9ceeb84f1369018571; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.budsgunshop.com
+      - __cfduid=d8ed484a245a0c584b9a84058e0cae1521369018571501; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.budsgunshop.com
+      - cookie_test=please_accept_for_session; expires=Wed, 19-Jun-2013 02:56:11 GMT;
+        path=/catalog/; domain=budsgunshop.com
+      Vary:
+      - Accept-Encoding
+      Cf-Ray:
+      - 715c097eb600168
+      Content-Encoding:
+      - gzip
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA8STwYrCMBCG73mK0qt009pdtDBG0IPsaRf0Xooda6CdSJKq
+        fftNdbU9dA/rQQ8J82f4Al+GwPxcld4RtZGKZn70Fvoe0lblkoqZ/7n+CqbT
+        jySI/LlgsM0sFkpLNF1oXClzEU/SKA7dGgN3kQFlFYqFVidyN3mLTZAk3nqv
+        bFGTAX7pMsCz1dle407cWvyG3IvRhR11bAcxMEh5alVa61KEwPuRQbuTIgR+
+        zdKUmO2E1bU7+g0MeE/kD6do0GkprXsLvmwIddH8z+nK3tHnK70PKq1UmT84
+        pRZ96ZDiQaPvujo8aNSizzHi/Y/1AwAA//8DAOTGdvmSAwAA
+    http_version: 
+  recorded_at: Mon, 20 May 2013 02:56:13 GMT
+- request:
+    method: get
+    uri: http://www.budsgunshop.com/catalog/ajax/categories.php?cID=37_588
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip,deflate,identity
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Mechanize/2.6.0 Ruby/2.0.0p0 (http://github.com/sparklemotion/mechanize/)
+      Accept-Charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      Accept-Language:
+      - en-us,en;q=0.5
+      Host:
+      - www.budsgunshop.com
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 300
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - cloudflare-nginx
+      Date:
+      - Mon, 20 May 2013 02:56:11 GMT
+      Content-Type:
+      - text/xml
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d2c8febf42d940f0ea20a25cd84031f1b1369018571710; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.budsgunshop.com
+      - __cfduid=d7d95a2180c66c8add5d28dad9ceeb84f1369018571; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.budsgunshop.com
+      - cookie_test=please_accept_for_session; expires=Wed, 19-Jun-2013 02:56:11 GMT;
+        path=/catalog/; domain=budsgunshop.com
+      Vary:
+      - Accept-Encoding
+      Cf-Ray:
+      - 715c0993b7d0168
+      Content-Encoding:
+      - gzip
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA8SSMWvDMBCFd/0K4dW4ciihMlwUSqdOGUyXLsaJLo7APoEk
+        l/jfV1Ha2B06ZGkX3T093oNPCLbnoecf6LyxtMlWD2XGkQ5WG+o22Wu9K6Rc
+        V8Uq2yoGhzZgZ51BP4sprkarx6dmLWVTyQpElAyoHVDtYrF4I42O1ycbupE8
+        iOQwwHNw7cnhUX1b4uU9v+2XaErmc3KOMPBIugm2GV2vShBLyeBykiUEcdXG
+        99geVXBjvPoSDMQC4RcauaSpcTDF8xisqOPr9JiY7ga7tVxLkvGfjFX5g9Fo
+        5PuJp3k3Wgzl+ylP80+QxPJLfgIAAP//AwAocWouzAIAAA==
+    http_version: 
+  recorded_at: Mon, 20 May 2013 02:56:13 GMT
+- request:
+    method: get
+    uri: http://www.budsgunshop.com/catalog/ajax/categories.php?cID=37_64
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip,deflate,identity
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Mechanize/2.6.0 Ruby/2.0.0p0 (http://github.com/sparklemotion/mechanize/)
+      Accept-Charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      Accept-Language:
+      - en-us,en;q=0.5
+      Host:
+      - www.budsgunshop.com
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 300
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - cloudflare-nginx
+      Date:
+      - Mon, 20 May 2013 02:56:12 GMT
+      Content-Type:
+      - text/xml
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d0e7be14ff7284a1df2deff6a57683a1e1369018571930; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.budsgunshop.com
+      - __cfduid=d7d95a2180c66c8add5d28dad9ceeb84f1369018571; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.budsgunshop.com
+      - cookie_test=please_accept_for_session; expires=Wed, 19-Jun-2013 02:56:12 GMT;
+        path=/catalog/; domain=budsgunshop.com
+      Vary:
+      - Accept-Encoding
+      Cf-Ray:
+      - 715c09a90ed0168
+      Content-Encoding:
+      - gzip
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA8SSsW7DIBCGd54CWWoXyyVOmjRWL0QZO6WqldlC9sVBso8I
+        Q+W+fXHS1h66ZGkXxA98d3wI2PZtw9/RdtrQJkofZhFHKk2lqd5EL/k+Wa+X
+        WZJGW8mgVA5rYzV2Y/gIU13JxVOxeiyybAEiJAakWpT7UFccqELL71V7fuZ5
+        n/P8ZFztqQNxOcMAe2fVyeJRfm+JN2xDf2dIDCUuFeK7+SoOfDzyI8igQ6oK
+        ZwpvGzkDMY0MhpEMIYhr1l2D6iid9WHpKzAQE6Pf5dKp3Ktvz3xXuvBuNzoN
+        ZHwl/9NmPrXJw+2SnXfmRpcf7m9MxPQLfgIAAP//AwDMHIcyvAIAAA==
+    http_version: 
+  recorded_at: Mon, 20 May 2013 02:56:13 GMT
+- request:
+    method: get
+    uri: http://www.budsgunshop.com/catalog/ajax/categories.php?cID=654
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip,deflate,identity
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Mechanize/2.6.0 Ruby/2.0.0p0 (http://github.com/sparklemotion/mechanize/)
+      Accept-Charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      Accept-Language:
+      - en-us,en;q=0.5
+      Host:
+      - www.budsgunshop.com
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 300
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - cloudflare-nginx
+      Date:
+      - Mon, 20 May 2013 02:56:12 GMT
+      Content-Type:
+      - text/xml
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d0bedf2b6222f0ce2812b86610e1b48dc1369018572; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.budsgunshop.com
+      - __cfduid=d8d5b15b8921e297ff4dc33e5cc44e62b1369018572194; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.budsgunshop.com
+      - cookie_test=please_accept_for_session; expires=Wed, 19-Jun-2013 02:56:12 GMT;
+        path=/catalog/; domain=budsgunshop.com
+      Vary:
+      - Accept-Encoding
+      Cf-Ray:
+      - 715c09c35cc0168
+      Content-Encoding:
+      - gzip
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA7ySzarCMBBG93mK0G3RtGD9gTEuvQVBQe+6hGZaA3UCSXvR
+        t7dWoQUv6EY3w/fNnMVZDKzOp4r/ofPG0jKIx1HAkXKrDZXLIN1vR/N5shjF
+        wUoyyFWNpXUGfV8ubTRaTpNJNptNQLSZAakTyl+Pmv8o0mVDHkS3Y4Dn2qmj
+        w6K7h+v2JrrUkz3CwCPprLZZ4yoZgRhWBrdJlhDEvRtfoSpk7Zp29SgMxMD0
+        P+nkSXpjqXxPuie/Kr2Io6H0zlYmR35wSiNPX3jf4bCDw/TD6mL4MlcAAAD/
+        /wMAKhaH72wCAAA=
+    http_version: 
+  recorded_at: Mon, 20 May 2013 02:56:13 GMT
+- request:
+    method: get
+    uri: http://www.budsgunshop.com/catalog/ajax/categories.php?cID=656
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip,deflate,identity
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Mechanize/2.6.0 Ruby/2.0.0p0 (http://github.com/sparklemotion/mechanize/)
+      Accept-Charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      Accept-Language:
+      - en-us,en;q=0.5
+      Host:
+      - www.budsgunshop.com
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 300
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - cloudflare-nginx
+      Date:
+      - Mon, 20 May 2013 02:56:12 GMT
+      Content-Type:
+      - text/xml
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d0bedf2b6222f0ce2812b86610e1b48dc1369018572; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.budsgunshop.com
+      - __cfduid=ddc303bb27b315d9d64142ebcc2a455181369018572604; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.budsgunshop.com
+      - cookie_test=please_accept_for_session; expires=Wed, 19-Jun-2013 02:56:12 GMT;
+        path=/catalog/; domain=budsgunshop.com
+      Vary:
+      - Accept-Encoding
+      Cf-Ray:
+      - 715c09ecd9b0168
+      Content-Encoding:
+      - gzip
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA8SRUWuDMBSF3/Mrgq/SRbfpMrhNsWsLg7UduLFHCTW6gCYQ
+        dXT/fmYWVAZFGLQvISc5h3z3BBbHssBfwlRSq7nj33gOFuqgU6nyufMc72eU
+        Bo8z31kwBAdei1wbKapefLdbmbIwCBPfow9AWoFA8VKw5fsqxst1/Iaj7XaP
+        V+voJQbye4VAHGvDP43IWFSWjZJ1+z6xCdcmXJtwT4neiqASKk1qnTSmYB6Q
+        oURgV6WVANJpWRWCZ6w2TXt0EgjIgPzvEDQMhzNEeSMLjnvG8wN0dndovyi9
+        793T0Rdwo0Q1Gb+zXw+f3t0O6Tc7S67PM292bme6KGkYjHp+3T5NLrn1XrFh
+        f8T9oYtsQsfW9u+WfwAAAP//xJjBTsJAEIZfpffGoKISj7oikAgm9NDz0g7t
+        hrZrtouBt3dpt5UxRkYTmRMcvgkfk+GfoX+yvTm2FdqsdEXwbUGeubg/Nl5C
+        6YLUkqR7lqfTKLpjVSU51BYMZTp6mKXjdygzYpA2B7PaU8Q7lmdSUMen2lQy
+        pVh7kmdK0HJ8VjpJckUJ6ZbkcR4iZ0jByILi3JI8M42chZgNojcAcyL1xMxT
+        Z5ZFK+Vp716UDRZ6BcVguZUZode+KGyKDjU8k4Kye+w+G0og2HuSxfn6EqUI
+        vKuLKNeWkiMdy+ONkmQZR5QNGUc8rrfHrgttSkmwbTgeX5Qec5lZSHKCsSd5
+        nNFv70VluV0rKFKC9ifMYz760u1Irimp4UkW5yGakKmsrTs9a0poeJSn0+jS
+        mxSyJt2nLchjjFbjRMOO4uswnv2Hcm5cW4dQ1l8D8vT36ruN7ZZasvnF3m54
+        njsP+T+qutzaPBDSWKPSDAJx4hv4irCvCMX5swRdII8Gqgo2lLnpUJ4ERJ1/
+        KGAnq5QUJz3L4T0aoj15MHDjcuqppKPChjrvdI9Qj18P/7WD+Tqrf7ZtuLDl
+        /tG3e988zf4AAAD//wMAWxm+CQcXAAA=
+    http_version: 
+  recorded_at: Mon, 20 May 2013 02:56:14 GMT
+- request:
+    method: get
+    uri: http://www.budsgunshop.com/catalog/ajax/categories.php?cID=915
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip,deflate,identity
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Mechanize/2.6.0 Ruby/2.0.0p0 (http://github.com/sparklemotion/mechanize/)
+      Accept-Charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      Accept-Language:
+      - en-us,en;q=0.5
+      Host:
+      - www.budsgunshop.com
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 300
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - cloudflare-nginx
+      Date:
+      - Mon, 20 May 2013 02:56:12 GMT
+      Content-Type:
+      - text/xml
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d05968d045587b2a5a6c53ea73a69844d1369018572830; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.budsgunshop.com
+      - __cfduid=d0bedf2b6222f0ce2812b86610e1b48dc1369018572; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.budsgunshop.com
+      - cookie_test=please_accept_for_session; expires=Wed, 19-Jun-2013 02:56:12 GMT;
+        path=/catalog/; domain=budsgunshop.com
+      Vary:
+      - Accept-Encoding
+      Cf-Ray:
+      - 715c0a03c060168
+      Content-Encoding:
+      - gzip
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA7ySW2uDMBiG7/0VQdhugqYR2umWWnqAUTboWNnFrkqqqQY0
+        kST28O+ntV3tGC1j0BvJa55PnjeGDLZ5BtZMaS5F38ZuxwZMRDLmIunb0/nM
+        8f1u4GB7EFokooYlUnGmT2FXLXkcBri7wJ6HCaqCRQTNWTgsCqpYRtA+WYRt
+        jaKpYqvwdTj5hKOPyRx9M6dNi2gm4oWRi1JlYYegdrRI/RRSMIKazHXG6Co0
+        qqxeHYJFUEvvF1PcC9qmo6yq60yNMxMXbc+4PxmnxhSPCG02G3dZxjophU5l
+        4UYyr01pJhO0rD/OjRRukRb/bPfQbjeWImI0A/c0L57AmCq1A2+l0kxfLHsY
+        g3deD+6H4HHopv/K75xdqufq5MBKKmBSBl5pzK+0qHlY8bDi4ZG/9WXz2w0a
+        CfBORcLAiCaX/Rsa7mnY0Le193Dww34HXgRfXzn3moNHrgG+AAAA//+im4uN
+        DJBdHFxaUJBfVKKQCEz6pcWpinidDVWsnagNVqwKKtHo7XojZNeHJBalp5bg
+        D2u4Gjqna0uUcHZMTk4tLgZXD/iLfGR19A5bE2QXe+TnFJcAqz68zkUooqFb
+        9ZGrVgAAAAD//wMA7Qpu8pQHAAA=
+    http_version: 
+  recorded_at: Mon, 20 May 2013 02:56:14 GMT
+- request:
+    method: get
+    uri: http://www.budsgunshop.com/catalog/ajax/categories.php?cID=1072
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip,deflate,identity
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Mechanize/2.6.0 Ruby/2.0.0p0 (http://github.com/sparklemotion/mechanize/)
+      Accept-Charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      Accept-Language:
+      - en-us,en;q=0.5
+      Host:
+      - www.budsgunshop.com
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 300
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - cloudflare-nginx
+      Date:
+      - Mon, 20 May 2013 02:56:13 GMT
+      Content-Type:
+      - text/xml
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d462478060af286a682974ea9d91194aa1369018573034; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.budsgunshop.com
+      - __cfduid=de8fdebc396606ab8179d0e3763e913ea1369018573; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.budsgunshop.com
+      - cookie_test=please_accept_for_session; expires=Wed, 19-Jun-2013 02:56:13 GMT;
+        path=/catalog/; domain=budsgunshop.com
+      Vary:
+      - Accept-Encoding
+      Cf-Ray:
+      - 715c0a17c1a0168
+      Content-Encoding:
+      - gzip
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA7ySQWuDMBTH736K4DVYdVvRQmrpLAxPO2x3CfrsAvFlJLF0
+        335Z1dbC8FS8PPJ/+T34vRC2O7eSnEAboXDrx6vIJ4CVqgUet37x8R6k6XoT
+        xP4u81jFLRyVFmBu4ccdRZ3FUfJUuvLMQpc8hryFbF+fOFZQk71uXUZLcqW/
+        Vyy83HoMzlbzLw1NlktuDC2KIhxn6DhDh5kb7DEDWJdWlZ2WWcTCafTYX0WF
+        wMI+CyOBN5nVnWsNwWPhxP+/VeI0ma7yyrUGa2fVr8zCqlGymarmihvLJXnr
+        kBRYzSoPLHUsvbBLq6fxvbqcf+IeWPwrrKeSB44CJDlAA2hgVrdH6RVdXPzl
+        Thxk8Klw3nhkHq/6CwAA///EWMtuwjAQ/BVfaA9WpUJVHuopakWpgIJiKtRj
+        lK5K1GBHjiPE39dxQvD2YJ/q3ECaUWbNZGeMR+o9krpdM/I+j9xaNYgaUHCx
+        yLUvLPJrZVEvUu8nyLuvcFSQHpxSO0zwU53aUhcVVyCVOPE6Pkqn5CuWNtjQ
+        0icoLJYyK92CW0TwbTuyZa7glJVknaSHjAO5SY7FE9kJkeuUdme0IdKWSAej
+        Ma1p1NBCn/wjyr7VPn7WoafNwBOlG02SuwfRcPoHHnyAsT3AWucxyCKDFPy2
+        t8D9+P4BG2q7md99MPci7DDBtwuqpttdTGbDuh+5ra5xdDakDS74VkHejuGo
+        S7kS3Bs2HbKfyMEnHVffIN1yG0RwmahxsEUULwmrikJCWQrpfvMMmiJ08GBH
+        acmyXF/bQKbCrduCBReMMpKJSh3ALDBO9pAUgssziaGERHoKik2lFyq9UoMP
+        hlo2q/STMwmWl249ZmoZlp8Go0kPLWaKomgnxVkvyK+qVPWV3zlCjaU2Nvhv
+        gKR/JvwHgCyyPO/6jW4n3utww6M1r6s3mtfT1RjZaqMtL4mRSrRU8qbA0w4M
+        g3bfacv4xzEun80fRL8AAAD//wMALqkcjloSAAA=
+    http_version: 
+  recorded_at: Mon, 20 May 2013 02:56:15 GMT
+- request:
+    method: get
+    uri: http://www.budsgunshop.com/catalog/ajax/categories.php?cID=26
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip,deflate,identity
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Mechanize/2.6.0 Ruby/2.0.0p0 (http://github.com/sparklemotion/mechanize/)
+      Accept-Charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      Accept-Language:
+      - en-us,en;q=0.5
+      Host:
+      - www.budsgunshop.com
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 300
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - cloudflare-nginx
+      Date:
+      - Mon, 20 May 2013 02:56:14 GMT
+      Content-Type:
+      - text/xml
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d94daf9ba647541305b6a3237ca0267411369018574; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.budsgunshop.com
+      - __cfduid=ded401fa9e449f830c8b7581c9dc584931369018574103; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.budsgunshop.com
+      - cookie_test=please_accept_for_session; expires=Wed, 19-Jun-2013 02:56:14 GMT;
+        path=/catalog/; domain=budsgunshop.com
+      Vary:
+      - Accept-Encoding
+      Cf-Ray:
+      - 715c0a82ca90168
+      Content-Encoding:
+      - gzip
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        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
+        s/0T1g8AAAD//wMA8e7QKL41AAA=
+    http_version: 
+  recorded_at: Mon, 20 May 2013 02:56:16 GMT
+- request:
+    method: get
+    uri: http://www.budsgunshop.com/catalog/ajax/categories.php?cID=26_29
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip,deflate,identity
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Mechanize/2.6.0 Ruby/2.0.0p0 (http://github.com/sparklemotion/mechanize/)
+      Accept-Charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      Accept-Language:
+      - en-us,en;q=0.5
+      Host:
+      - www.budsgunshop.com
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 300
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - cloudflare-nginx
+      Date:
+      - Mon, 20 May 2013 02:56:14 GMT
+      Content-Type:
+      - text/xml
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d94daf9ba647541305b6a3237ca0267411369018574; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.budsgunshop.com
+      - __cfduid=df1568b5b5909caa1b88ac58eebd9eaff1369018574810; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.budsgunshop.com
+      - cookie_test=please_accept_for_session; expires=Wed, 19-Jun-2013 02:56:14 GMT;
+        path=/catalog/; domain=budsgunshop.com
+      Vary:
+      - Accept-Encoding
+      Cf-Ray:
+      - 715c0ac95360168
+      Content-Encoding:
+      - gzip
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA7yWz0+DMBTH7/wVzZLpgSiMbWzEilEX5xLNDtPzUsvbaNa1
+        pgV//PcOZKMkHnqxF8Ij70M+3+bxAr752nP0AUozKa57g8uwh0BQmTGxve4t
+        VsuL6XScXAx6N6mHKSlgKxUD3Rbfh1uWpVG8jpL1YDiZ4uBQeliQPaTP34+S
+        6wIUDuraw/BVKJIr2KS3lILW9duCpksHBtB2eliDyNaFXJeKpyEOzNLD1VVI
+        ATj4rZnmQDZpocrDo6bwcGD4/qkejiam+t1Bh9hqN82OlcfJuGPMiKA5s3Y+
+        tju2noadEbnjhO5y8rmz9m4B5yMyHpjqM1gRUTCN5qXIWQa2CY6cf+JcD86k
+        MzgP8q3UtvJNs/Ojj03jOeFUVseOnoAUuf1+qcHq3P0T6DjJKAk7Sbik1qPf
+        NDtfM53FOJclz9AZ2b9fobmUmWI0tw5QsX4/iv2WdJwmiTrrZ/Fye49msAGh
+        rb/fivFPjGP/OEpM/xXZEMU4EZmtvUk4dh92Rv9VUA7ome3g3Hr71IxfMf1o
+        4n4Nxd0Ey2qDoKOcbYaa8lvqHzME5h/bDwAAAP//AwCvD1Y06wkAAA==
+    http_version: 
+  recorded_at: Mon, 20 May 2013 02:56:16 GMT
+- request:
+    method: get
+    uri: http://www.budsgunshop.com/catalog/ajax/categories.php?cID=26_27
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip,deflate,identity
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Mechanize/2.6.0 Ruby/2.0.0p0 (http://github.com/sparklemotion/mechanize/)
+      Accept-Charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      Accept-Language:
+      - en-us,en;q=0.5
+      Host:
+      - www.budsgunshop.com
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 300
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - cloudflare-nginx
+      Date:
+      - Mon, 20 May 2013 02:56:15 GMT
+      Content-Type:
+      - text/xml
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d8b543315b606a66ed46c4213627346541369018575000; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.budsgunshop.com
+      - __cfduid=d94daf9ba647541305b6a3237ca0267411369018574; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.budsgunshop.com
+      - cookie_test=please_accept_for_session; expires=Wed, 19-Jun-2013 02:56:15 GMT;
+        path=/catalog/; domain=budsgunshop.com
+      Vary:
+      - Accept-Encoding
+      Cf-Ray:
+      - 715c0adc7160168
+      Content-Encoding:
+      - gzip
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA8SSW0vDMBiG7/MrSm9LTdut64Qsox5AQVHQeVtC+60Ltokk
+        qUx/vT1MW0Whu6k3IW/4nvC8IWS9LwvrFZTmUqxs/8SzLRCpzLjIV/b1w527
+        XIanrm+vKSIpM5BLxUH34a3e8owGiySIEn8WzQmuIyKClUA3GjLrluWa4DYj
+        Anuj2E7BlsZpClq3t+F6hL1zUe8awumIfhQRDSJLjEwqVVCP4GFEpFmFFEBw
+        l7kugG2pUVV9dAiI4IHwH+7h0P2Ku+fsBV+oqjyuQgc23D8V8eazYZHHHahS
+        Fpn1FN9sLq17lj6PL/MJOy3sHOCJG4VRMCwUq5IV3MDoEj0wsfgi+PalzkCB
+        MWy099f85O/t/dDWR0nrX5U/AAAA///Emctu2zAQRX+Fm3ZDuIgelS10ZQhN
+        UriJDUlFgOxYmbUE6wVaan+/1DOarCgCGe68mAPfK80MZ6gPlezuPCBZVP9K
+        2cLUVc8AdrX6PhDe3tKC3Rou1KUvEPREgU+9bXIuSCA4v66Q30F0hJANONZS
+        f5BmNXlKgkoUWaLuoMPoAsPOIBd0x6DKG3XpfTCyYNsG7SV4Jb+ivbrkV9qH
+        I4ve3oFU/77fk1mTsnZJ0QWF/dzd7dLC/TN5lL26Ybmy/vtnOiPoDR70yYe8
+        WlGhYzT26e+ClHnkSdq1x8+sqL+RQ5Wk6iPlgNJPtkcHEDt14EQgR9xTlZWN
+        RglMqME62N6BOjjIv9Yw0mFGTeyACZ5vYp6oq5/ikWXvHDARH7LiN9d6+j1o
+        8Pk7FuhHUkgpF8WQ3zgTKyp74Ogbh7/1eu98nFr1A2EKx1YtZUPVIs9KjTQa
+        QJNp5IDG+sSTzQNTn/3neGzZHrjnOTHBNkdxLlmZcI3XAHiDb2O3BUV9ikPi
+        W+RHmXxRtxKH1LfowKCfCUB+yAu50TZVqSx+QaDflIA2FLaXFRvwGI2+/IJr
+        toj9ZRed5B9Ag1nvw+Euyi4kYq3WsSxZ2rMG7Xg2OBuiImvSceh+6SSrl0OP
+        9kP3BGKfczZMsVrI8vyT8fxM9qKQwepW3lA6ofijBngxMauTSv0ieojG3jod
+        H0puRXvTqIsBNFnjLjQyfRPQsDJ9ETBnxoWLdZxdr0zHSceZtOGBFe6F5U2q
+        1XVH0uQ2aoEj5Khp5GjYhvcVnoQ152fys2JnLlacgR1FZ+oDLUy/+w+y/wEA
+        AP//AwByRzxWyh0AAA==
+    http_version: 
+  recorded_at: Mon, 20 May 2013 02:56:16 GMT
+- request:
+    method: get
+    uri: http://www.budsgunshop.com/catalog/ajax/categories.php?cID=26_44
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip,deflate,identity
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Mechanize/2.6.0 Ruby/2.0.0p0 (http://github.com/sparklemotion/mechanize/)
+      Accept-Charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      Accept-Language:
+      - en-us,en;q=0.5
+      Host:
+      - www.budsgunshop.com
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 300
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - cloudflare-nginx
+      Date:
+      - Mon, 20 May 2013 02:56:15 GMT
+      Content-Type:
+      - text/xml
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d2efba657e7bd91a3df4283cc3bce7c781369018575; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.budsgunshop.com
+      - __cfduid=da8b6ed078cd3cb7c98f7d8f4ff8c81761369018575268; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.budsgunshop.com
+      - cookie_test=please_accept_for_session; expires=Wed, 19-Jun-2013 02:56:15 GMT;
+        path=/catalog/; domain=budsgunshop.com
+      Vary:
+      - Accept-Encoding
+      Cf-Ray:
+      - 715c0af64790168
+      Content-Encoding:
+      - gzip
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA7yUQWuDMBTH7/kUImyX4KLO2o6lKbsMBh09tLCjhPiqgRhH
+        Ekf37WfdhhF2k3kJ+T/IL+/HC6G7S6OCDzBWtnobJndxGIAWbSl1tQ1fjodo
+        s1k9REm4Y4gK7qBqjQQ7hs9+K0uW5kWWFes4oaRPiGreAHvlVbSXDigZIqJw
+        cYbXBs7sSQiwdmCRZ8VtrWRVO4vxiQsnBVd4PxTIyBgPI2pBl4Vri84oFlPi
+        R0Svq251f+Q7S6uAn5kzXV/6CYgST+Avlyz3VY6NdHVwy5v3x+Dt2rmeIzXQ
+        8E2a41/WwnLrOJ3YOQO8GbqdpeVjlh7XaiLU9RdLM+vljYzFh3PvuxxcDSbw
+        Wp0jNcDwBPaPdsT/Mb4AAAD//wMAEMlYz2sEAAA=
+    http_version: 
+  recorded_at: Mon, 20 May 2013 02:56:16 GMT
+- request:
+    method: get
+    uri: http://www.budsgunshop.com/catalog/ajax/categories.php?cID=26_487
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip,deflate,identity
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Mechanize/2.6.0 Ruby/2.0.0p0 (http://github.com/sparklemotion/mechanize/)
+      Accept-Charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      Accept-Language:
+      - en-us,en;q=0.5
+      Host:
+      - www.budsgunshop.com
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 300
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - cloudflare-nginx
+      Date:
+      - Mon, 20 May 2013 02:56:15 GMT
+      Content-Type:
+      - text/xml
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d2efba657e7bd91a3df4283cc3bce7c781369018575; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.budsgunshop.com
+      - __cfduid=dc64cee645ec22e63fc9791a902317a471369018575476; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.budsgunshop.com
+      - cookie_test=please_accept_for_session; expires=Wed, 19-Jun-2013 02:56:15 GMT;
+        path=/catalog/; domain=budsgunshop.com
+      Vary:
+      - Accept-Encoding
+      Cf-Ray:
+      - 715c0b0bda10168
+      Content-Encoding:
+      - gzip
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA8SUwWuDMBTG7/4V4lW66OqsQpqy7bTD6GGDHiXqq4bZBJK4
+        tf/9Uu1qhJ5kc5eQL8n7+H7vQfDmeGjcT5CKCb72wrvAc4EXomS8Wnsvb9tF
+        kjyki9DbEAcXVEMlJAM1iJPZspLcx1mUrLI4WmFkpIM5PQB5AglaU4w65WA4
+        aklrCXvyWBSgVOeFnmvxAf57m4PyKS/9nTQJanNxLR/qHKyAl5kWWSsbEmBk
+        SwefVy44YNRrphqge6Jla44uwsHIyn4TI0qWIwwpvrhpiNsldbukk5kuXr71
+        Yn7AOE1twFehVA6ymgo11M8NEi5HIDugugaZn35jVFez/55VPEJkXToNcjKX
+        5TA3zCoIbJjtucH9rNBPvqlYnVc/qsHqD/mQ/R1+AwAA//8DAPA3sFBIBQAA
+    http_version: 
+  recorded_at: Mon, 20 May 2013 02:56:17 GMT
+- request:
+    method: get
+    uri: http://www.budsgunshop.com/catalog/ajax/categories.php?cID=26_635
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip,deflate,identity
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Mechanize/2.6.0 Ruby/2.0.0p0 (http://github.com/sparklemotion/mechanize/)
+      Accept-Charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      Accept-Language:
+      - en-us,en;q=0.5
+      Host:
+      - www.budsgunshop.com
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 300
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - cloudflare-nginx
+      Date:
+      - Mon, 20 May 2013 02:56:15 GMT
+      Content-Type:
+      - text/xml
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d2efba657e7bd91a3df4283cc3bce7c781369018575; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.budsgunshop.com
+      - __cfduid=d5b434a4c9843c7611e3796a17ca2b24e1369018575768; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.budsgunshop.com
+      - cookie_test=please_accept_for_session; expires=Wed, 19-Jun-2013 02:56:16 GMT;
+        path=/catalog/; domain=budsgunshop.com
+      Vary:
+      - Accept-Encoding
+      Cf-Ray:
+      - 715c0b287690168
+      Content-Encoding:
+      - gzip
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA8STsWrDMBCGdz2F8VpSxTF2XbgopFM7BZoHMMI+2wLlBCe5
+        pG9f1zWNhi5emkFC33H/oQ8kOFwvNvlA9sbRPs0et2mC1LjWUL9P386nTVUV
+        z5ssPSgBjQ7YOzbob/A5HU2rdmVd5sW0KpATCiB9QfWqqe1HSl40M1oPcq4K
+        wGtgPTB26tg06P08Uy5dckk9/KZu7QI8UlsHV49s1RZkjAK+d3KEIH/YeIu6
+        U4HHqbSAABld/U+LLK+KWOMUBuSVEnPmfgpl/hQbvJvO4kqDOXNPgzI2OA8u
+        rH9KS+pfLGT8Pb4AAAD//wMAW7tpJlgDAAA=
+    http_version: 
+  recorded_at: Mon, 20 May 2013 02:56:17 GMT
+- request:
+    method: get
+    uri: http://www.budsgunshop.com/catalog/ajax/categories.php?cID=26_104
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip,deflate,identity
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Mechanize/2.6.0 Ruby/2.0.0p0 (http://github.com/sparklemotion/mechanize/)
+      Accept-Charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      Accept-Language:
+      - en-us,en;q=0.5
+      Host:
+      - www.budsgunshop.com
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 300
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - cloudflare-nginx
+      Date:
+      - Mon, 20 May 2013 02:56:16 GMT
+      Content-Type:
+      - text/xml
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d2efba657e7bd91a3df4283cc3bce7c781369018575; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.budsgunshop.com
+      - __cfduid=d8f48026a2a79480490f55f524e36ee061369018575996; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.budsgunshop.com
+      - cookie_test=please_accept_for_session; expires=Wed, 19-Jun-2013 02:56:16 GMT;
+        path=/catalog/; domain=budsgunshop.com
+      Vary:
+      - Accept-Encoding
+      Cf-Ray:
+      - 715c0b3f0950168
+      Content-Encoding:
+      - gzip
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA8SUQYvCMBCF7/0VodeiaUTXCrGiHhZhwUPdi5cS2lHLxkSS
+        dFf//aapu0bwIB70EvLCvJf5BhI6Oe45+galKynGIenGIQJRyLIS23G4yJad
+        JBmMOiScpAEtmIGtVBXoizjZbVWmvbecxP18mMQUWxlQwfaQTjkHgd5rgeZM
+        g6bYnQYUjkaxnYJNOi0K0NplYlsXuTrsfNG/pvhiCKgGUeZG5rXiqb3NlwFt
+        ViEFUNzqSnNgm9So2h6dRUCx1/xNjn7S9zlmSv4IO5EHUP6sr6QZJsSnWZod
+        qAdQnO+VHCMy9DkyVnyhz8P9AI0hcoZnd07igd/5au1GjxbCgBLM2LfHOJpL
+        dejeDbNau010lRGdM57O1yNXgB+sPKFZXeqWMwMORdPh3XRNQNQEtJBewKNo
+        1xTY/8t+AQAA//8DADeaXQIFBQAA
+    http_version: 
+  recorded_at: Mon, 20 May 2013 02:56:17 GMT
+- request:
+    method: get
+    uri: http://www.budsgunshop.com/catalog/ajax/categories.php?cID=26_104_1215
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip,deflate,identity
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Mechanize/2.6.0 Ruby/2.0.0p0 (http://github.com/sparklemotion/mechanize/)
+      Accept-Charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      Accept-Language:
+      - en-us,en;q=0.5
+      Host:
+      - www.budsgunshop.com
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 300
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - cloudflare-nginx
+      Date:
+      - Mon, 20 May 2013 02:56:16 GMT
+      Content-Type:
+      - text/xml
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d4d5330e98388fb22ca8faaf1ece8e7ee1369018576209; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.budsgunshop.com
+      - __cfduid=d659ae11ad89b9f29dce17764b5a13d4c1369018576; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.budsgunshop.com
+      - cookie_test=please_accept_for_session; expires=Wed, 19-Jun-2013 02:56:16 GMT;
+        path=/catalog/; domain=budsgunshop.com
+      Vary:
+      - Accept-Encoding
+      Cf-Ray:
+      - 715c0b5452b0168
+      Content-Encoding:
+      - gzip
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA7SRwWrDMAyG734KE+gupnMS1qxjqsuawxgMNtYHCMJR00Bi
+        DzsZzdvPTTqa007bRfgX4rM+BNtT2/Avcr62ZhMlt3HEyWhb1qbaRC/7t+V6
+        vXpYJtFWMdDYUWVdTf4ahvCsS5VmRRLfFUmarM4lAxmaDAy2pHJrNGHDb7D9
+        fOQ5Ojfw99558iDHAQZ06hweHR3Uk9bk/fiJfO6NyDHMyVcsB7HrSz9msaeG
+        dBc2lhe2WKSZGMnih3xFMvBkyqKzRe8aFYOcRwbnaqwhkFOufUN4UJ3rQ+sS
+        GMiZ76/q93P1sHcQ4R9oKuI7rP7AeEKKESkm5D+qyvnNvwEAAP//AwBHcRKS
+        LQIAAA==
+    http_version: 
+  recorded_at: Mon, 20 May 2013 02:56:17 GMT
+- request:
+    method: get
+    uri: http://www.budsgunshop.com/catalog/ajax/categories.php?cID=26_648
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip,deflate,identity
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Mechanize/2.6.0 Ruby/2.0.0p0 (http://github.com/sparklemotion/mechanize/)
+      Accept-Charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      Accept-Language:
+      - en-us,en;q=0.5
+      Host:
+      - www.budsgunshop.com
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 300
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - cloudflare-nginx
+      Date:
+      - Mon, 20 May 2013 02:56:16 GMT
+      Content-Type:
+      - text/xml
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d659ae11ad89b9f29dce17764b5a13d4c1369018576; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.budsgunshop.com
+      - __cfduid=d86ad515f03feac9c37ee556383e729bc1369018576418; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.budsgunshop.com
+      - cookie_test=please_accept_for_session; expires=Wed, 19-Jun-2013 02:56:16 GMT;
+        path=/catalog/; domain=budsgunshop.com
+      Vary:
+      - Accept-Encoding
+      Cf-Ray:
+      - 715c0b693370168
+      Content-Encoding:
+      - gzip
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        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
+    http_version: 
+  recorded_at: Mon, 20 May 2013 02:56:17 GMT
+- request:
+    method: get
+    uri: http://www.budsgunshop.com/catalog/ajax/categories.php?cID=26_679
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip,deflate,identity
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Mechanize/2.6.0 Ruby/2.0.0p0 (http://github.com/sparklemotion/mechanize/)
+      Accept-Charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      Accept-Language:
+      - en-us,en;q=0.5
+      Host:
+      - www.budsgunshop.com
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 300
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - cloudflare-nginx
+      Date:
+      - Mon, 20 May 2013 02:56:16 GMT
+      Content-Type:
+      - text/xml
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d659ae11ad89b9f29dce17764b5a13d4c1369018576; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.budsgunshop.com
+      - __cfduid=dc8c4d4298435e7e215487f4f13e154041369018576681; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.budsgunshop.com
+      - cookie_test=please_accept_for_session; expires=Wed, 19-Jun-2013 02:56:16 GMT;
+        path=/catalog/; domain=budsgunshop.com
+      Vary:
+      - Accept-Encoding
+      Cf-Ray:
+      - 715c0b8435b0168
+      Content-Encoding:
+      - gzip
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA8SUQWrDMBBF9zqF8TakshOiKjBRaMmmq5j2AMbYk0QgSyDJ
+        bXr7Om7qqOBFMNTdiPmD/vCfBgTbc62id7ROGr2J04ckjlCXppL6uIlf3vZz
+        zlfreRpvBYGy8Hg0VqK7ic+2lJVYsJw9rvN0yRnQVhPQRY1i709oo1dUprhM
+        BNp1CeDZ2+Jk8SCeyhKd64bS/h7tfLPAdzMQcKir3Ju8sUokQENJ4HJqoxHo
+        t5ZOYXEQ3jZt6yoI0CD9IAhnq5Ajs7Ju34hm5qNCezfG1fbjmhqC8WUI0eeK
+        grR3s/TV7Jd7eqbFMNNzoxT6MTy9c3qWdJhlN24xu3/aSDJMkdk27SiQ3vmH
+        LDT8zb4AAAD//wMAI3u8xwcFAAA=
+    http_version: 
+  recorded_at: Mon, 20 May 2013 02:56:18 GMT
+- request:
+    method: get
+    uri: http://www.budsgunshop.com/catalog/ajax/categories.php?cID=26_994
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip,deflate,identity
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Mechanize/2.6.0 Ruby/2.0.0p0 (http://github.com/sparklemotion/mechanize/)
+      Accept-Charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      Accept-Language:
+      - en-us,en;q=0.5
+      Host:
+      - www.budsgunshop.com
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 300
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - cloudflare-nginx
+      Date:
+      - Mon, 20 May 2013 02:56:17 GMT
+      Content-Type:
+      - text/xml
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d659ae11ad89b9f29dce17764b5a13d4c1369018576; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.budsgunshop.com
+      - __cfduid=da34a565a8e157043d218451ca557a5dd1369018576988; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.budsgunshop.com
+      - cookie_test=please_accept_for_session; expires=Wed, 19-Jun-2013 02:56:17 GMT;
+        path=/catalog/; domain=budsgunshop.com
+      Vary:
+      - Accept-Encoding
+      Cf-Ray:
+      - 715c0ba22fb0168
+      Content-Encoding:
+      - gzip
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA8SSz2uDMBiG7/krxKu4qGtLhTTFbpcxth2EHXoRiV/bME26
+        L3G0//3sD6c9bOBlXkLewPvwPhC2PFSl8wVopFYLN7wLXAeU0IVU24X7lL75
+        8/k09kN3yQkTuYWtRgmmC8fmKgsezbI4nmRhENwz2mTCVF4BT2RlQewYPSfC
+        4GAx3yFseCIEGHOG0VToPXir3IB50bWyhv70ugJhBlSRWZ3VWPKA0X4k7HQq
+        rYDRS5amhHzDLdbN0zUQRnurfxMI+gIrP/2sc4TBBl1xBIXJjUKNKM1wgWtt
+        hPmz/vwHlOIDrKXPcDS24TvpXqNt/qeTYDXcq+W1OK/FeRfcCL7TG9/3ZLjT
+        qfP/w6OoP/zxdf338G8AAAD//8SXPw+CMBDFvwo7k5MyO5n4JzEkzI0c0IAt
+        aSmJ314DVDnjck3sbV1+zXvXd732h/CJYag4En4wWllZNwMYsgHExjaSZahT
+        juB63ZVkD2+O4SCytYGzbLUiy18ohvij6l+GBkxyEspV4jY48xqpZCvTHunX
+        HvFTtVv7ukJZSQiI1QdkyNUWWdDWSrr+mWLIFRbv6oB7aaEYKr9Zi89F18GD
+        rN5jDLVHT6e80ffeapXsQYVMB8+nnmc4D9TMuWxbQbcxU/EvIjQdCmEU/R2+
+        UPG1oyYuQIwB+fHYH9X79fSpewIAAP//AwCwLq1uDg4AAA==
+    http_version: 
+  recorded_at: Mon, 20 May 2013 02:56:18 GMT
+- request:
+    method: get
+    uri: http://www.budsgunshop.com/catalog/ajax/categories.php?cID=26_995
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip,deflate,identity
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Mechanize/2.6.0 Ruby/2.0.0p0 (http://github.com/sparklemotion/mechanize/)
+      Accept-Charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      Accept-Language:
+      - en-us,en;q=0.5
+      Host:
+      - www.budsgunshop.com
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 300
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - cloudflare-nginx
+      Date:
+      - Mon, 20 May 2013 02:56:17 GMT
+      Content-Type:
+      - text/xml
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d1e38dcc749416851ab2e7b3db8dd126f1369018577; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.budsgunshop.com
+      - __cfduid=dff0984fc996df8854d2a30f03011d0251369018577205; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.budsgunshop.com
+      - cookie_test=please_accept_for_session; expires=Wed, 19-Jun-2013 02:56:17 GMT;
+        path=/catalog/; domain=budsgunshop.com
+      Vary:
+      - Accept-Encoding
+      Cf-Ray:
+      - 715c0bb819a0168
+      Content-Encoding:
+      - gzip
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA8TQTUvDMBgH8Hs+xehVatpJRwtZxtSL4AtY8LBLCemzGciS
+        mReZ395YxxoPHoJgLyH/8PyTHyGr417O3sFYodUyKy+LbAaK616o3TK7a5/y
+        uq6avMxWFBHOHOy0EWDH8BG2oqfzRdc0VVcWZUVwyIgotgd6nbdvnhkgeIiI
+        wNEZ9mpgS9ecg7XDbbjl+gAXz+FNi8fKOIuIBdV3TnfeSFoQHEdEvlalVah8
+        Z2ElsC11xoejU0AER+Lf8IsfeG+MsCn0U2ECeBPDb17WCeph+v/J86uYfPu4
+        SSAP0xP8chGT78EftOwT2OfGBPQ6pj8IKcG5BPq58Qf6JwAAAP//xJbBCsIw
+        DIZfpfeeFGEP4FkHUty5zMyVYTtqO/TtHeuKjbcImlsO+eH7Q/KTbxdlU6If
+        zeAsAXztZ8BGE69DD14ctI2dbkP0c+ASTCxq+aFmWKJtaekEl84A6QDeEgb4
+        CsHHK3gKeepnwEYxqfR8hk8CdxYw7D96BFTvbuPdWbEHG0iTz0qZlQxWUO4r
+        MwyaYiD1/x+7QsF5dj7AQ9RjMC0le5JOZh3DBexKG432lvJOrv0M2Gj6DeiJ
+        tPZZ8EPwXC///AsAAP//AwDuuCwiCQwAAA==
+    http_version: 
+  recorded_at: Mon, 20 May 2013 02:56:18 GMT
+- request:
+    method: get
+    uri: http://www.budsgunshop.com/catalog/ajax/categories.php?cID=26_631
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip,deflate,identity
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Mechanize/2.6.0 Ruby/2.0.0p0 (http://github.com/sparklemotion/mechanize/)
+      Accept-Charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      Accept-Language:
+      - en-us,en;q=0.5
+      Host:
+      - www.budsgunshop.com
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 300
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - cloudflare-nginx
+      Date:
+      - Mon, 20 May 2013 02:56:17 GMT
+      Content-Type:
+      - text/xml
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d1e38dcc749416851ab2e7b3db8dd126f1369018577; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.budsgunshop.com
+      - __cfduid=d720f36e036df298be40e59394cba05031369018577477; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.budsgunshop.com
+      - cookie_test=please_accept_for_session; expires=Wed, 19-Jun-2013 02:56:17 GMT;
+        path=/catalog/; domain=budsgunshop.com
+      Vary:
+      - Accept-Encoding
+      Cf-Ray:
+      - 715c0bd3b5e0168
+      Content-Encoding:
+      - gzip
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA7yUwWuDMBjF7/4Vwat00dq6DlLLKGMbbHTQ3SXErxqmSfli
+        h/3vp6lDhV3cwUvIC3mP9wtJ2K4uC/INaKRWWze4810CSuhUqmzrvh4Pi81m
+        /bAI3F3sMMEryDRKML24NlOZxssoicIgiVYBo410mOIlxPtcnsm72Gsspfhi
+        1C46DOoKeY5wih+FAGNsJH1GeTae91RXoNKmEG3d3sDd2xxmmj1JpZMLFrHP
+        6FA6rB2VVsDoTUtTAD/FFV6apU44jA4I/oZZj2FQlkYr8olcAHnjBpDYzpO5
+        bkGeDfJskNcFzY4YLoeILzpr/dNwOtP81cNh9Q8u8pJfcWr73jc/wGoEABzF
+        5MP/dc1d/t4flT9U+X9fg7XOcP/p8Pf6AQAA//8DAFi8PlL3BAAA
+    http_version: 
+  recorded_at: Mon, 20 May 2013 02:56:19 GMT
+- request:
+    method: get
+    uri: http://www.budsgunshop.com/catalog/ajax/categories.php?cID=99
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip,deflate,identity
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Mechanize/2.6.0 Ruby/2.0.0p0 (http://github.com/sparklemotion/mechanize/)
+      Accept-Charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      Accept-Language:
+      - en-us,en;q=0.5
+      Host:
+      - www.budsgunshop.com
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 300
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - cloudflare-nginx
+      Date:
+      - Mon, 20 May 2013 02:56:17 GMT
+      Content-Type:
+      - text/xml
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d1e38dcc749416851ab2e7b3db8dd126f1369018577; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.budsgunshop.com
+      - __cfduid=db26f4ef528c76ea8740b20ccd23a3a8c1369018577717; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.budsgunshop.com
+      - cookie_test=please_accept_for_session; expires=Wed, 19-Jun-2013 02:56:18 GMT;
+        path=/catalog/; domain=budsgunshop.com
+      Vary:
+      - Accept-Encoding
+      Cf-Ray:
+      - 715c0bebf390168
+      Content-Encoding:
+      - gzip
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA8SZW2/aMBSA3/kVEa8RJWkgECmlYhdNVTeQFlZpe6ksY8DD
+        2Mh2uvbfL+RSckATRpPsF5SU71Sfj46Pj9v0/nXHvBciFRX8rhveBF2PcCyW
+        lK/vug/ZvDceD5Ne2L2fdFKMNFkLSYk6vrwVj3Q5SZLnJB6k/eKxk3K0I5Pp
+        EgvvgWsiOdLFL0cs7ZdfdFLyqiXaSLKaZFjsifL9+V5TrPqHGP8k5gh3UkX4
+        8lmL51yySZD226+d9PDJBSdpv3qnihG0mmiZFz+qXzppv+V9toQ4DMAS2J5w
+        A+sKsykaxlB0MTPQPEA2JYdJ0pb8gKTaIq+yuaxb4X6D2xQfj0ZAXOZcC25u
+        XvFO1MMkAurZ1Fw7mzpRjgOonEtJTXRrzm52x1BVbThhBo3tSNrNLKjjj0gy
+        7xehyiC7B9avWZvKt7dxW/mTwMVhYFzCFe6mipPbtvhnoQneXDZuOKvtLQGH
+        xyPaMKKMc1zhTnI8hM3tK8n3N94UY6JUOZVcli9DfBBicwFREJ8uQLClcepr
+        3lGXHrbVv1HGiNZeRtcbbaBe837DW+3aQQQGkRnONJKXnRvOqms0BptzdsjX
+        SkhMjKvkGOKkUKLhAC5guxW9rGjLrLhSXLGIdpijbhOfLKSYAa/qNmWIw24z
+        jM4XUCmauje0VW14tyl8pOBGRdNC7bZGMBV+J7uiZK+5MLxHuLkyBBFIeNmi
+        d0hujf3fIxydTPGZflEGhtolaVf3JNu7neBGSa5Bu7Jgqi36MeVXzOM17+YS
+        DweW7A+S4kVtqYH1EbWb67AtvEAKC+NMl7Sj7QfO+4Wkvyk22X5H0qbuaDCC
+        unnvCxMmtjVoN7dgcH1CfJ0jufR+ZNPLxg3tl7TdEyUGe+9JSE1ejWu5wv+7
+        mC9LJv+UvG7OA8Lu5r04BA3kZ7412YY1ZlcUnCqPgufKrKZL1H5Bj+Ef0uZ6
+        c8UhWNI2WnPzXP5/5i8AAAD//wMACV1NmdkZAAA=
+    http_version: 
+  recorded_at: Mon, 20 May 2013 02:56:19 GMT
+- request:
+    method: get
+    uri: http://www.budsgunshop.com/catalog/ajax/categories.php?cID=99_1065
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip,deflate,identity
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Mechanize/2.6.0 Ruby/2.0.0p0 (http://github.com/sparklemotion/mechanize/)
+      Accept-Charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      Accept-Language:
+      - en-us,en;q=0.5
+      Host:
+      - www.budsgunshop.com
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 300
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - cloudflare-nginx
+      Date:
+      - Mon, 20 May 2013 02:56:18 GMT
+      Content-Type:
+      - text/xml
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d1e38dcc749416851ab2e7b3db8dd126f1369018577; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.budsgunshop.com
+      - __cfduid=d6a2d588c7b9e7c7aece6ee4057f847181369018577945; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.budsgunshop.com
+      - cookie_test=please_accept_for_session; expires=Wed, 19-Jun-2013 02:56:18 GMT;
+        path=/catalog/; domain=budsgunshop.com
+      Vary:
+      - Accept-Encoding
+      Cf-Ray:
+      - 715c0c026ff0168
+      Content-Encoding:
+      - gzip
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA8SSPwvCMBDF93yK0rVo2kFt4RrBzclBcC0hPTVQcyVJpX57
+        6z+Mg4MOuhz3Hjx4P+5g3h+a6IjWaTJlnI3TOEKjqNZmV8bL9WqU55NilMVz
+        wUBJjzuyGt1TnIZV16IoqiydTi5jBnwwGBh5QLHQhlTXSOuAXw0G2Hsr9xa3
+        Yq2oRZckq9Zr5fiGrMf+ocLkM8LAoakrT1VnG5ECDyWDyzRkEPhNa9eg3Apv
+        u8G6CwY86P4WYxpi3Jp+ivBI/aN+/lK/Je+Hi0ZfctzjyQ+AePhkZwAAAP//
+        AwAk0D8engIAAA==
+    http_version: 
+  recorded_at: Mon, 20 May 2013 02:56:19 GMT
+- request:
+    method: get
+    uri: http://www.budsgunshop.com/catalog/ajax/categories.php?cID=86
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip,deflate,identity
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Mechanize/2.6.0 Ruby/2.0.0p0 (http://github.com/sparklemotion/mechanize/)
+      Accept-Charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      Accept-Language:
+      - en-us,en;q=0.5
+      Host:
+      - www.budsgunshop.com
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 300
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - cloudflare-nginx
+      Date:
+      - Mon, 20 May 2013 02:56:18 GMT
+      Content-Type:
+      - text/xml
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=dd8819b6864a0306c6b1e1d226de550df1369018578147; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.budsgunshop.com
+      - __cfduid=decf4a409d881680fa5bcd1d381fcc8531369018578; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.budsgunshop.com
+      - cookie_test=please_accept_for_session; expires=Wed, 19-Jun-2013 02:56:18 GMT;
+        path=/catalog/; domain=budsgunshop.com
+      Vary:
+      - Accept-Encoding
+      Cf-Ray:
+      - 715c0c162280168
+      Content-Encoding:
+      - gzip
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA8STz2uDMBSA7/4VwWvo1Lp1FlIL3WEIGzsIu0rQpw3oS4lJ
+        6f77+RMtAxkM3CXkJd8j33tJ2PFWleQKqhYSD7b34NoEMJWZwOJgR/HHJgie
+        9hvPPoYWS7mGQioB9RR8NVORhcEu8bxnlznN3GLIKwgjJZG8S4OaCyQxz6Fm
+        TrdjMbhpxc8K8vDVIO32nJanI08HfgItVgNmiZaJUWXYnDQPLdaOKBGY08ei
+        LoHnoVamWRoCizkz658FuL4/L+BkyjKTBfnkptTL7gNKR3RV7a3/ONd+OfPq
+        0tzmL1o+ov/R7e3Om1s3Ute2eYu+E7Sm6d67M43wogRqchKyAi3Srs/LL7vP
+        oGMG7TPWrCG4/5sxpEYBeZOFSBfVe5AO4N+MvwEAAP//IjHUjSxRXZxXUlRJ
+        RJqGKByY8sMMpfwIzgeaVwR2ckklfjeDVWrDVNI1YZiZo7i5JDE5W9efmMID
+        pnRggho1dYRn5iVnpBaXQIMbv8MRigfC6ebGRsgu9y/JSC3C61yoChq6UR+5
+        YgcAAAD//wMAYMbP6BIIAAA=
+    http_version: 
+  recorded_at: Mon, 20 May 2013 02:56:19 GMT
+- request:
+    method: get
+    uri: http://www.budsgunshop.com/catalog/ajax/categories.php?cID=1196
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip,deflate,identity
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Mechanize/2.6.0 Ruby/2.0.0p0 (http://github.com/sparklemotion/mechanize/)
+      Accept-Charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      Accept-Language:
+      - en-us,en;q=0.5
+      Host:
+      - www.budsgunshop.com
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 300
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - cloudflare-nginx
+      Date:
+      - Mon, 20 May 2013 02:56:18 GMT
+      Content-Type:
+      - text/xml
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d8d6a19ec3aaa5a9f2da7ee2be38fc9b91369018578719; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.budsgunshop.com
+      - __cfduid=decf4a409d881680fa5bcd1d381fcc8531369018578; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.budsgunshop.com
+      - cookie_test=please_accept_for_session; expires=Wed, 19-Jun-2013 02:56:18 GMT;
+        path=/catalog/; domain=budsgunshop.com
+      Vary:
+      - Accept-Encoding
+      Cf-Ray:
+      - 715c0c4fc1f0168
+      Content-Encoding:
+      - gzip
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA7ySPQvCMBBA9/yK0lU0RlBbOCNOKogODo4ltGcNxAskrR//
+        3voBrSLiosuRd7yDNwTGp70JDui8tjQKRacbBkipzTTlo3C+XrWjqB+3RTiW
+        DFJVYG6dRl/DuXrqTAoRDxLR60XAK2JAao9ykqbo/e0A+G3DAE+FUzuHW7nZ
+        WYNeGeRPXi0w8EhZUtikdEZ2gTeRwXWSJQR+Z+0Nqq0sXFmtHsCANzrfJw+b
+        yUs8BjNFWV7S5+ZKbNXi36Pj1+iFpTyYflN9NVvTX2fz5me5AAAA//8DALN2
+        LJ5mAgAA
+    http_version: 
+  recorded_at: Mon, 20 May 2013 02:56:20 GMT
+recorded_with: VCR 2.5.0
