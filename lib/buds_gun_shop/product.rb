@@ -18,7 +18,7 @@ module BudsGunShop
     end
 
     def reload
-      page = Celluloid::Actor[:session_pool].get("http://www.budsgunshop.com/catalog/product_info.php/products_id/#{item_no}")
+      page = Celluloid::Actor[:session_pool].get("#{CATALOG_ROOT}/product_info.php/products_id/#{item_no}")
       return if page.at("td:contains('Product not found!')")
 
       main_table = page.at('#mainmain div table table table')
