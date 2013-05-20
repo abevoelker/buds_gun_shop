@@ -26,13 +26,13 @@ module BudsGunShop
       end
     end
 
-    def self.find(id, session=Session.new)
-      page = session.get("http://www.budsgunshop.com/catalog/ajax/categories.php?cID=#{id}")
+    def self.find(id)
+      page = Celluloid::Actor[:session_pool].get("http://www.budsgunshop.com/catalog/ajax/categories.php?cID=#{id}")
       init_from_xml(page)
     end
 
-    def self.all(session=Session.new)
-      root = session.get('http://www.budsgunshop.com/catalog/ajax/categories.php')
+    def self.all
+      root = Celluloid::Actor[:session_pool].get('http://www.budsgunshop.com/catalog/ajax/categories.php')
       init_from_xml(root)
     end
 

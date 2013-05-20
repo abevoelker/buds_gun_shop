@@ -4,6 +4,10 @@ class ManufacturerSpec < MiniTest::Spec
 
   describe 'Manufacturer' do
 
+    before do
+      Celluloid::Actor[:session_pool] = BudsGunShop::Session.pool
+    end
+
     describe 'built without any values' do
 
       before do

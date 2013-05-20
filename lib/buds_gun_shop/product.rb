@@ -17,8 +17,8 @@ module BudsGunShop
       self
     end
 
-    def reload(session=Session.new)
-      page = session.get("http://www.budsgunshop.com/catalog/product_info.php/products_id/#{item_no}")
+    def reload
+      page = Celluloid::Actor[:session_pool].get("http://www.budsgunshop.com/catalog/product_info.php/products_id/#{item_no}")
       return if page.at("td:contains('Product not found!')")
 
       main_table = page.at('#mainmain div table table table')
@@ -46,8 +46,8 @@ module BudsGunShop
       condition == "Factory New"
     end
 
-    def self.find(item_no, session=Session.new)
-      new(item_no: item_no).reload(session)
+    def self.find(item_no)
+      new(item_no: item_no).reload
     end
 
   end

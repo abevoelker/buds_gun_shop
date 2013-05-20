@@ -22,7 +22,6 @@ Gem::Specification.new do |s|
   s.add_development_dependency "rspec",      "~> 2.11"
   s.add_development_dependency "rake",       "~> 0.9"
   s.add_development_dependency "webmock",    "~> 1.11"
-  #s.add_development_dependency "fakeweb",    "~> 1.3"
   s.add_development_dependency "vcr",        "~> 2.5"
 
   s.files         = `git ls-files`.split("\n")
