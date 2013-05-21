@@ -55,6 +55,29 @@ class CategorySpec < MiniTest::Spec
         @category.must_be :valid?
       end
 
+      describe 'without children' do
+
+        it "should return an array just including itself for to_a" do
+          @category.to_a.must_equal [@category]
+        end
+
+      end
+
+      describe 'with children' do
+
+        before do
+          @child1   = BudsGunShop::Category.new(:name => 'child1', :id => '123_1')
+          @child2   = BudsGunShop::Category.new(:name => 'child2', :id => '123_2')
+          @category.children << @child1
+          @category.children << @child2
+        end
+
+        it "should add children to to_a" do
+          @category.to_a.must_equal [@category, @child1, @child2]
+        end
+
+      end
+
     end
 
     describe 'fetching all categories' do
@@ -67,6 +90,11 @@ class CategorySpec < MiniTest::Spec
 
       it "should create valid categories" do
         @categories.each{|c| c.must_be :valid?}
+      end
+
+      it "should return a flattened list of all categories" do
+        @categories.size.must_equal 458
+        @categories.reject{|c| c.parent.nil?}.must_be_empty
       end
 
     end

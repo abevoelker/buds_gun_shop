@@ -17,6 +17,10 @@ module BudsGunShop
       self
     end
 
+    def to_a
+      [self] + children
+    end
+
     def self.init_from_xml(xml, parent=nil)
       xml.search('//category').map do |c|
         id, name, is_leaf = ['id', 'name', 'isleaf'].map{|n| c.at(n).andand.text }
@@ -33,7 +37,7 @@ module BudsGunShop
 
     def self.all
       root = Celluloid::Actor[:session_pool].get("#{CATALOG_ROOT}/ajax/categories.php")
-      init_from_xml(root)
+      init_from_xml(root).map(&:to_a).flatten
     end
 
   end
