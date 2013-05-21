@@ -129,6 +129,35 @@ class ProductSpec < MiniTest::Spec
 
     end
 
+    describe 'with specifications section' do
+
+      before do
+        VCR.use_cassette('FS-2000') do
+          @product = BudsGunShop::Product.find(4461)
+        end
+      end
+
+      it "should set specifications attribute" do
+        @product.specifications.size.must_equal 14
+        @product.specifications['Capacity'].must_equal '30 + 1'
+        @product.specifications['Caliber'].must_equal '223 Remington/5.56 NATO'
+      end
+
+    end
+
+    describe 'without specifications section' do
+
+      before do
+        VCR.use_cassette('5.11 socks') do
+          @product = BudsGunShop::Product.find(311009027)
+        end
+      end
+
+      it "should set specifications attribute to nil" do
+        @product.specifications.must_be :nil?
+      end
+    end
+
   end
 
 end

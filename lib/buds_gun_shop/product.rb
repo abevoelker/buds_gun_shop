@@ -8,7 +8,7 @@ module BudsGunShop
     include ActiveModel::Validations
 
     attr_accessor :name, :mfg_code, :upc, :item_no, :manufacturer,
-                  :condition, :in_stock, :price
+                  :condition, :in_stock, :price, :specifications
 
     validates :item_no, presence: true
 
@@ -26,12 +26,18 @@ module BudsGunShop
       self.name = main_table.at('//h1').text.strip
       self.in_stock = !!page.at("#A2C") #!main_table.at("span:contains('OUT OF STOCK')")
 
+      # price
       price_elem = page.at("span:contains('Retail Price')")
       if price_elem
         self.price = Money.parse(price_elem.parent.at('strong').text)
       end
 
-      # assign other attributes
+      # specifications
+      spec_rows = page.at("strong:contains('Specifications')").andand.parent.
+        andand.parent.andand.parent.andand.children.andand[1..-1]
+      self.specifications = spec_rows.andand.reduce({}){|a,h| a[h.search('td')[0].text.strip] = h.search('td')[1].text.strip; a }
+
+      # other attributes
       attrs = ["Model:", "UPC:", "Bud's Item Number:", "MFG:", "Condition:"].map do |txt|
         page.at("span:contains(\"#{txt}\")").andand.next_element.andand.text.andand.strip
       end
