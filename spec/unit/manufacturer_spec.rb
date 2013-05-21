@@ -5,7 +5,8 @@ class ManufacturerSpec < MiniTest::Spec
   describe 'Manufacturer' do
 
     before do
-      Celluloid::Actor[:session_pool] = BudsGunShop::Session.pool
+      rate_limit = BudsGunShop::RateLimiter.new(100, 1)
+      Celluloid::Actor[:session_pool] = BudsGunShop::Session.pool(args: [rate_limit])
     end
 
     describe 'built without any values' do

@@ -1,4 +1,5 @@
 require 'buds_gun_shop/version'
+require 'buds_gun_shop/rate_limiter'
 require 'buds_gun_shop/session'
 require 'buds_gun_shop/product'
 require 'buds_gun_shop/manufacturer'
