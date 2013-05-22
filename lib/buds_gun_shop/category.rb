@@ -8,7 +8,6 @@ module BudsGunShop
 
     attr_accessor :name, :id, :parent, :children
 
-    validates :name, presence: true
     validates :id,   presence: true
 
     def initialize(attrs={})
@@ -18,7 +17,7 @@ module BudsGunShop
     end
 
     def to_a
-      [self] + children
+      [self] + children.map(&:to_a)
     end
 
     def products

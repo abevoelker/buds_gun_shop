@@ -39,8 +39,8 @@ class CategorySpec < MiniTest::Spec
         @category = BudsGunShop::Category.new(:id => '123')
       end
 
-      it "should not be valid" do
-        @category.wont_be :valid?
+      it "should be valid" do
+        @category.must_be :valid?
       end
 
     end
@@ -72,8 +72,8 @@ class CategorySpec < MiniTest::Spec
           @category.children << @child2
         end
 
-        it "should add children to to_a" do
-          @category.to_a.must_equal [@category, @child1, @child2]
+        it "should add children to children reader" do
+          @category.children.must_equal [@child1, @child2]
         end
 
       end
@@ -93,7 +93,7 @@ class CategorySpec < MiniTest::Spec
       end
 
       it "should return a flattened list of all categories" do
-        @categories.size.must_equal 458
+        @categories.size.must_equal 855
         @categories.reject{|c| c.parent.nil?}.must_be_empty
       end
 
