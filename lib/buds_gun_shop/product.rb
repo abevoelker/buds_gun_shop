@@ -33,7 +33,7 @@ module BudsGunShop
       end
 
       # specifications
-      spec_rows = page.at("strong:contains('Specifications')").andand.parent.
+      spec_rows = page.at("td > strong:contains('Specifications')").andand.parent.
         andand.parent.andand.parent.andand.children.andand[1..-1]
       self.specifications = spec_rows.andand.reduce({}){|a,h| a[h.search('td')[0].text.strip] = h.search('td')[1].text.strip; a }
 
