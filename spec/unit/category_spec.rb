@@ -99,6 +99,21 @@ class CategorySpec < MiniTest::Spec
 
     end
 
+    describe 'with one page of products' do
+
+      before do
+        VCR.use_cassette('adcor_defense') do
+          @category = BudsGunShop::Category.new(:id => "36_1037")
+          @products = @category.products
+        end
+      end
+
+      it "should only load the products on first page" do
+        @products.size.must_equal 7
+      end
+
+    end
+
   end
 
 end

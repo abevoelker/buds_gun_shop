@@ -21,6 +21,12 @@ module BudsGunShop
       [self] + children
     end
 
+    def products
+      cat_page = Celluloid::Actor[:session_pool].get("#{CATALOG_ROOT}/index.php/cPath/#{id}")
+      links = cat_page.search('.productListing-productname a').map{|a| a.attr('href')}
+      links.map{|l| Product.init_from_url(l)}
+    end
+
     def self.init_from_xml(xml, parent=nil)
       xml.search('//category').map do |c|
         id, name, is_leaf = ['id', 'name', 'isleaf'].map{|n| c.at(n).andand.text }
