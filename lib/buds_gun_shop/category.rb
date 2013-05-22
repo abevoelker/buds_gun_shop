@@ -22,9 +22,14 @@ module BudsGunShop
     end
 
     def products
-      cat_page = Celluloid::Actor[:session_pool].get("#{CATALOG_ROOT}/index.php/cPath/#{id}")
-      links = cat_page.search('.productListing-productname a').map{|a| a.attr('href')}
-      links.map{|l| Product.init_from_url(l)}
+      page = Celluloid::Actor[:session_pool].get("#{CATALOG_ROOT}/index.php/cPath/#{id}")
+      products = []
+      begin
+        next_pg = page.link_with(:text => "[Next >>]")
+        products += BudsGunShop::Product.all_from_index_page(page)
+        page = Celluloid::Actor[:session_pool].click(next_pg) if next_pg
+      end while next_pg
+      products
     end
 
     def self.init_from_xml(xml, parent=nil)

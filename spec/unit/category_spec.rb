@@ -114,6 +114,21 @@ class CategorySpec < MiniTest::Spec
 
     end
 
+    describe 'with 494 products (10 pages)' do
+
+      before do
+        VCR.use_cassette('1911_category') do
+          @category = BudsGunShop::Category.new(:id => "21_1171")
+          @products = @category.products
+        end
+      end
+
+      it "should load all 494 products" do
+        @products.size.must_equal 494
+      end
+
+    end
+
   end
 
 end

@@ -60,5 +60,10 @@ module BudsGunShop
       new(item_no: url.match(/\/products_id\/(\S+)\//).captures[0])
     end
 
+    def self.all_from_index_page(page)
+      links = page.search('.productListing-productname a').map{|a| a.attr('href')}
+      links.map{|l| init_from_url(l)}
+    end
+
   end
 end

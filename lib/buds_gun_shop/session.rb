@@ -11,5 +11,9 @@ module BudsGunShop
     def get(*args, &blk)
       @rate_limiter.limit{@agent.get(*args, &blk)}.value
     end
+
+    def click(*args, &blk)
+      @rate_limiter.limit{@agent.click(*args, &blk)}.value
+    end
   end
 end
