@@ -158,6 +158,19 @@ class ProductSpec < MiniTest::Spec
       end
     end
 
+    describe 'init from URL' do
+
+      before do
+        @product = BudsGunShop::Product.init_from_url("http://www.budsgunshop.com/catalog/product_info.php/cPath" +
+                                                      "/36_1037/products_id/76044/Adcor+Defense+B.E.A.R.+Semi-Au" +
+                                                      "tomatic+223+Rem5.56+NATO")
+      end
+
+      it "should parse correct product ID from a product URL" do
+        @product.item_no.must_equal "76044"
+      end
+    end
+
   end
 
 end

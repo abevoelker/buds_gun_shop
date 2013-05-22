@@ -56,5 +56,9 @@ module BudsGunShop
       new(item_no: item_no).reload
     end
 
+    def self.init_from_url(url)
+      new(item_no: url.match(/\/products_id\/(\S+)\//).captures[0])
+    end
+
   end
 end
