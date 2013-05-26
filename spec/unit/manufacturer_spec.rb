@@ -60,7 +60,7 @@ class ManufacturerSpec < MiniTest::Spec
     describe 'fetching all manufacturers' do
 
       before do
-        VCR.use_cassette('manufacturers_ajax') do
+        VCR.use_cassette('manufacturers all') do
           @manufacturers = BudsGunShop::Manufacturer.all
         end
       end

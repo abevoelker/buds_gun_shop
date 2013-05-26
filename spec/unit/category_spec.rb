@@ -152,7 +152,7 @@ class CategorySpec < MiniTest::Spec
       describe 'a category with no products' do
 
         before do
-          VCR.use_cassette('category_alexander_arms_accessories') do
+          VCR.use_cassette('category_alexander_arms_accessories_products') do
             @category = BudsGunShop::Category.new(:id => "36_42_102")
             @products = @category.products
           end
@@ -167,7 +167,7 @@ class CategorySpec < MiniTest::Spec
       describe 'a category with one page of products' do
 
         before do
-          VCR.use_cassette('adcor_defense') do
+          VCR.use_cassette('category_adcor_defense_products') do
             @category = BudsGunShop::Category.new(:id => "36_1037")
             @products = @category.products
           end
@@ -182,7 +182,7 @@ class CategorySpec < MiniTest::Spec
       describe 'a category with 494 products (10 pages)' do
 
         before do
-          VCR.use_cassette('1911_category') do
+          VCR.use_cassette('category_1911s_products') do
             @category = BudsGunShop::Category.new(:id => "21_1171")
             @products = @category.products
           end

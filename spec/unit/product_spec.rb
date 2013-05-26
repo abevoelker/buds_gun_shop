@@ -36,7 +36,7 @@ class ProductSpec < MiniTest::Spec
     describe 'non-existent' do
 
       before do
-        VCR.use_cassette('invalid_product') do
+        VCR.use_cassette('product invalid') do
           @product = BudsGunShop::Product.find(454564656)
         end
       end
@@ -50,7 +50,7 @@ class ProductSpec < MiniTest::Spec
     describe 'in-stock' do
 
       before do
-        VCR.use_cassette('Ruger 10-22') do
+        VCR.use_cassette('product Ruger 10-22') do
           @product = BudsGunShop::Product.find(70280)
         end
       end
@@ -72,7 +72,7 @@ class ProductSpec < MiniTest::Spec
     describe 'condition: new' do
 
       before do
-        VCR.use_cassette('Ruger 10-22') do
+        VCR.use_cassette('product Ruger 10-22') do
           @product = BudsGunShop::Product.find(70280)
         end
       end
@@ -90,7 +90,7 @@ class ProductSpec < MiniTest::Spec
     describe 'with UPC' do
 
       before do
-        VCR.use_cassette('Ruger 10-22') do
+        VCR.use_cassette('product Ruger 10-22') do
           @product = BudsGunShop::Product.find(70280)
         end
       end
@@ -104,7 +104,7 @@ class ProductSpec < MiniTest::Spec
     describe 'with manufacturer' do
 
       before do
-        VCR.use_cassette('Ruger 10-22') do
+        VCR.use_cassette('product Ruger 10-22') do
           @product = BudsGunShop::Product.find(70280)
         end
       end
@@ -118,7 +118,7 @@ class ProductSpec < MiniTest::Spec
     describe 'out of stock' do
 
       before do
-        VCR.use_cassette('FS-2000') do
+        VCR.use_cassette('product FS-2000') do
           @product = BudsGunShop::Product.find(4461)
         end
       end
@@ -131,7 +131,7 @@ class ProductSpec < MiniTest::Spec
 
     describe 'with specifications section' do
       before do
-        VCR.use_cassette('FS-2000') do
+        VCR.use_cassette('product FS-2000') do
           @product = BudsGunShop::Product.find(4461)
         end
       end
@@ -145,7 +145,7 @@ class ProductSpec < MiniTest::Spec
 
     describe 'with extra "Specifications" word above table' do
       before do
-        VCR.use_cassette('adcor_bear') do
+        VCR.use_cassette('product adcor bear') do
           @product = BudsGunShop::Product.find(411552563)
         end
       end
@@ -160,7 +160,7 @@ class ProductSpec < MiniTest::Spec
     describe 'without specifications section' do
 
       before do
-        VCR.use_cassette('5.11 socks') do
+        VCR.use_cassette('product 5.11 socks') do
           @product = BudsGunShop::Product.find(311009027)
         end
       end
@@ -193,7 +193,7 @@ class ProductSpec < MiniTest::Spec
     describe 'with description and specifications outside white background' do
 
       before do
-        VCR.use_cassette('FN_SCAR') do
+        VCR.use_cassette('product FN SCAR') do
           @product = BudsGunShop::Product.find(62606)
         end
       end
@@ -215,7 +215,7 @@ class ProductSpec < MiniTest::Spec
     describe 'with all product info inside the white background' do
 
       before do
-        VCR.use_cassette('Puma_revolver') do
+        VCR.use_cassette('product puma revolver') do
           @product = BudsGunShop::Product.find(411550457)
         end
       end
