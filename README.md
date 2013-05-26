@@ -8,7 +8,7 @@ Basic API for accessing http://www.budsgunshop.com
 
 ```ruby
 require 'buds_gun_shop'
-rate_limit = BudsGunShop::RateLimiter.new(10, 1)
+rate_limit = Celluloid::RateLimiter.new(10, 1)
 Celluloid::Actor[:session_pool] = BudsGunShop::Session.pool(args: [rate_limit])
 
 root_categories = BudsGunShop::Category.all

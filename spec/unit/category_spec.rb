@@ -5,7 +5,7 @@ class CategorySpec < MiniTest::Spec
   describe 'Category' do
 
     before do
-      rate_limit = BudsGunShop::RateLimiter.new(100, 1)
+      rate_limit = Celluloid::RateLimiter.new(100, 1)
       Celluloid::Actor[:session_pool] = BudsGunShop::Session.pool(args: [rate_limit])
     end
 

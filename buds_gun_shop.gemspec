@@ -11,11 +11,12 @@ Gem::Specification.new do |s|
   s.description = %q{Basic API for accessing http://www.budsgunshop.com}
   s.license     = 'MIT'
 
-  s.add_dependency "activemodel", ">= 3.0"
-  s.add_dependency "mechanize",   ">= 2.3"
+  s.add_dependency "activemodel",          ">= 3.0"
+  s.add_dependency "mechanize",            ">= 2.3"
   s.add_dependency "andand"
-  s.add_dependency "money",       ">= 5.0"
-  s.add_dependency "celluloid",   ">= 0.13"
+  s.add_dependency "money",                ">= 5.0"
+  s.add_dependency "celluloid",            ">= 0.13"
+  s.add_dependency "celluloid-rate_limit", "~> 0.0.1"
 
   s.add_development_dependency "bundler",    "~> 1.0"
   s.add_development_dependency "minitest",   "~> 4.1"
