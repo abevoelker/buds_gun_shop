@@ -8,13 +8,15 @@ module BudsGunShop
   class Category
     include ActiveModel::Validations
 
-    attr_accessor :name, :id, :parent, :children
+    attr_accessor :name, :id, :parent, :is_leaf, :children, :loaded
 
     validates :id,   presence: true
 
     def initialize(attrs={})
       attrs.each{|a,v| send(a.to_s+'=', v) }
-      self.children ||= []
+      @is_leaf ||= false
+      @children ||= []
+      @loaded = @is_leaf || @children.any?
       self
     end
 
@@ -33,23 +35,63 @@ module BudsGunShop
       products
     end
 
-    def self.init_from_xml(xml, parent=nil)
-      xml.search('//category').map do |c|
-        id, name, is_leaf = ['id', 'name', 'isleaf'].map{|n| c.at(n).andand.text }
-        category = self.new(:name => name, :id => id, :parent => parent)
-        category.children = find(id) unless is_leaf
-        category
+    # lazy accessor
+    def children
+      if @is_leaf
+        @children
+      else
+        @children = Category.all(@id)
       end
     end
 
-    def self.find(id)
-      page = Celluloid::Actor[:session_pool].get("#{CATALOG_ROOT}/ajax/categories.php?cID=#{id}")
-      init_from_xml(page)
+    def load(force=false)
+      return true if loaded && !force
+      # re-find this category
+      Category.find(@id)
+      # hit lazy children accessor
+      self.children
+      @loaded = true
     end
 
-    def self.all
-      root = Celluloid::Actor[:session_pool].get("#{CATALOG_ROOT}/ajax/categories.php")
-      init_from_xml(root).map(&:to_a).flatten
+    def reload
+      load(true)
+    end
+
+    def self.init_from_xml(xml)
+      id, name, is_leaf = ['id', 'name', 'isleaf'].map{|n| xml.at(n).andand.text }
+      self.new(:name => name, :id => id, :is_leaf => is_leaf)
+    end
+
+    def self.find_from_xml(xml, id)
+      xml = xml.at("//category/id[text()='#{id}']/..")
+      init_from_xml(xml) if xml
+    end
+
+    def self.all_from_xml(xml, parent=nil)
+      xml.search('//category').map{|c| init_from_xml(c)}
+    end
+
+    def self.find(id)
+      parent = id.to_s.split('_')[-2]
+      page = if parent
+               Celluloid::Actor[:session_pool].get("#{CATALOG_ROOT}/ajax/categories.php?cID=#{parent}")
+             else
+               Celluloid::Actor[:session_pool].get("#{CATALOG_ROOT}/ajax/categories.php")
+             end
+      find_from_xml(page, id)
+    end
+
+    def self.all(parent=nil)
+      page = if parent
+               Celluloid::Actor[:session_pool].get("#{CATALOG_ROOT}/ajax/categories.php?cID=#{parent}")
+             else
+               Celluloid::Actor[:session_pool].get("#{CATALOG_ROOT}/ajax/categories.php")
+             end
+      all_from_xml(page)
+    end
+
+    def self.all_flattened
+      all.map(&:to_a).flatten
     end
 
   end

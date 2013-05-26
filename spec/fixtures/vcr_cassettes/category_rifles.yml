@@ -1,0 +1,104 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.budsgunshop.com/catalog/ajax/categories.php?cID=36
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip,deflate,identity
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Mechanize/2.7.0 Ruby/2.0.0p195 (http://github.com/sparklemotion/mechanize/)
+      Accept-Charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      Accept-Language:
+      - en-us,en;q=0.5
+      Host:
+      - www.budsgunshop.com
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 300
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - cloudflare-nginx
+      Date:
+      - Sun, 26 May 2013 16:29:59 GMT
+      Content-Type:
+      - text/xml
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d26878b92bd4262fe60d8b34253fd3eaa1369585799; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.budsgunshop.com
+      - cookie_test=please_accept_for_session; expires=Tue, 25-Jun-2013 16:29:59 GMT;
+        path=/catalog/; domain=budsgunshop.com
+      Vary:
+      - Accept-Encoding
+      Cf-Ray:
+      - 74bd8ebfc340169
+      Content-Encoding:
+      - gzip
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        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
+        oxbvAEMAAA==
+    http_version: 
+  recorded_at: Sun, 26 May 2013 16:30:00 GMT
+recorded_with: VCR 2.5.0
