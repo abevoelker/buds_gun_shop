@@ -1,3 +1,5 @@
+# -*- encoding: utf-8 -*-
+
 require 'active_model'
 require 'mechanize'
 require 'andand'
@@ -8,7 +10,8 @@ module BudsGunShop
     include ActiveModel::Validations
 
     attr_accessor :name, :mfg_code, :upc, :item_no, :manufacturer,
-                  :condition, :in_stock, :price, :specifications
+                  :condition, :in_stock, :price, :description,
+                  :specifications
 
     validates :item_no, presence: true
 
@@ -25,6 +28,16 @@ module BudsGunShop
 
       self.name = main_table.at('//h1').text.strip
       self.in_stock = !!page.at("#A2C") #!main_table.at("span:contains('OUT OF STOCK')")
+
+      # white main product area - not always nicely separated
+      header_selector = "table[style~='background-color:#FFFFFF;']"
+      header_area = page.at(header_selector)
+
+      # description
+      desc_div_selector = "div[style~='padding-left:24px; padding-right:24px;']"
+      self.description = page.search(desc_div_selector).andand.
+                         map{|n| n.text.gsub(/(Â|­| )/, "").gsub("\r\n", "\n").strip}.andand.
+                         join("\n")
 
       # price
       price_elem = page.at("span:contains('Retail Price')")

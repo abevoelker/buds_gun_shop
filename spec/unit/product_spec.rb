@@ -190,6 +190,49 @@ class ProductSpec < MiniTest::Spec
       end
     end
 
+    describe 'with description and specifications outside white background' do
+
+      before do
+        VCR.use_cassette('FN_SCAR') do
+          @product = BudsGunShop::Product.find(62606)
+        end
+      end
+
+      it "should parse description properly" do
+        @product.description.must_match "FAMILY:SCAR Series"
+        @product.description.must_match "ADDL INFO:Ambidextrous Controls"
+      end
+
+      it "should parse specifications properly" do
+        @product.specifications.size.must_equal 14
+        @product.specifications['Finish'].must_equal 'Flat Dark Earth/Black Barrel'
+        @product.specifications['Caliber'].must_equal '308 Winchester'
+        @product.specifications['Weight'].must_equal '8 lbs'
+      end
+
+    end
+
+    describe 'with all product info inside the white background' do
+
+      before do
+        VCR.use_cassette('Puma_revolver') do
+          @product = BudsGunShop::Product.find(411550457)
+        end
+      end
+
+      it "should parse description properly" do
+        @product.description.must_match "Legacy Puma M-1873 .22 CALIBER REVOLVER, PCR187322W"
+        @product.description.must_match "With the frame size and weight of a Single Action Army revolver"
+      end
+
+      it "should parse specifications properly" do
+        @product.specifications.size.must_equal 9
+        @product.specifications['Type'].must_equal 'Revolver'
+        @product.specifications['Capacity'].must_equal '6'
+      end
+
+    end
+
   end
 
 end
