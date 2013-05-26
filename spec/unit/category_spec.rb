@@ -196,20 +196,6 @@ class CategorySpec < MiniTest::Spec
 
     end
 
-    describe 'find' do
-
-      before do
-        VCR.use_cassette('categories_all') do
-          @category = BudsGunShop::Category.find('36')
-        end
-      end
-
-      it "should return exactly one category" do
-        @category.class.must_equal BudsGunShop::Category
-      end
-
-    end
-
   end
 
 end
