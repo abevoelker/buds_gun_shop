@@ -11,9 +11,12 @@ require 'buds_gun_shop'
 rate_limit = BudsGunShop::RateLimiter.new(10, 1)
 Celluloid::Actor[:session_pool] = BudsGunShop::Session.pool(args: [rate_limit])
 
-categories = BudsGunShop::Category.all
+root_categories = BudsGunShop::Category.all
+all_categories = BudsGunShop::Category.all_flattened
 rifles = BudsGunShop::Category.find(36)
-manufacturers = BudsGunShop::Manufacturer.all
+
 nugget = BudsGunShop::Product.find(411540200)
-products = categories.map(&:products).flatten
+all_products = all_categories.map(&:products).flatten
+
+manufacturers = BudsGunShop::Manufacturer.all
 ```
