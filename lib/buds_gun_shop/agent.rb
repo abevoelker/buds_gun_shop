@@ -2,7 +2,7 @@ require 'celluloid/autostart'
 require 'celluloid/rate_limit'
 
 module BudsGunShop
-  class Session
+  class Agent
     include Celluloid
     include Celluloid::RateLimit
 

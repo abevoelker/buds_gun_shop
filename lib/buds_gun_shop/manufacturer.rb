@@ -14,7 +14,7 @@ module BudsGunShop
     validates :name, presence: true
 
     def self.all
-      page = Celluloid::Actor[:buds_gun_shop_session].get("#{CATALOG_ROOT}/ajax/manufacturers_ajax.php")
+      page = Celluloid::Actor[:buds_gun_shop_agent].get("#{CATALOG_ROOT}/ajax/manufacturers_ajax.php")
       page.search('form select option').map do |e|
         self.new(id: e.attr(:value), name: e.text.sub(/\(\d*\)\z/, '').strip)
       end
