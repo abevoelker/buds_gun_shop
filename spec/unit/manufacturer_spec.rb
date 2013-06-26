@@ -1,74 +1,70 @@
 require File.dirname(__FILE__) + '/unit_helper'
 
-class ManufacturerSpec < MiniTest::Spec
+describe BudsGunShop::Manufacturer do
 
-  describe 'Manufacturer' do
+  before do
+    rate_limit = Celluloid::RateLimiter.new(100, 1)
+    Celluloid::Actor[:session_pool] = BudsGunShop::Session.pool(args: [rate_limit])
+  end
+
+  describe 'built without any values' do
 
     before do
-      rate_limit = Celluloid::RateLimiter.new(100, 1)
-      Celluloid::Actor[:session_pool] = BudsGunShop::Session.pool(args: [rate_limit])
+      @manufacturer = BudsGunShop::Manufacturer.new
     end
 
-    describe 'built without any values' do
-
-      before do
-        @manufacturer = BudsGunShop::Manufacturer.new
-      end
-
-      it "should not be valid" do
-        @manufacturer.wont_be :valid?
-      end
-
+    it "should not be valid" do
+      @manufacturer.wont_be :valid?
     end
 
-    describe 'built with just name' do
+  end
 
-      before do
-        @manufacturer = BudsGunShop::Manufacturer.new(name: 'Foo')
-      end
+  describe 'built with just name' do
 
-      it "should not be valid" do
-        @manufacturer.wont_be :valid?
-      end
-
+    before do
+      @manufacturer = BudsGunShop::Manufacturer.new(name: 'Foo')
     end
 
-    describe 'built with just id' do
-
-      before do
-        @manufacturer = BudsGunShop::Manufacturer.new(id: '123')
-      end
-
-      it "should not be valid" do
-        @manufacturer.wont_be :valid?
-      end
-
+    it "should not be valid" do
+      @manufacturer.wont_be :valid?
     end
 
-    describe 'built with name and id' do
+  end
 
-      before do
-        @manufacturer = BudsGunShop::Manufacturer.new(name: 'Foo', id: '123')
-      end
+  describe 'built with just id' do
 
-      it "should be valid" do
-        @manufacturer.must_be :valid?
-      end
-
+    before do
+      @manufacturer = BudsGunShop::Manufacturer.new(id: '123')
     end
 
-    describe 'fetching all manufacturers' do
+    it "should not be valid" do
+      @manufacturer.wont_be :valid?
+    end
 
-      before do
-        VCR.use_cassette('manufacturers all') do
-          @manufacturers = BudsGunShop::Manufacturer.all
-        end
+  end
+
+  describe 'built with name and id' do
+
+    before do
+      @manufacturer = BudsGunShop::Manufacturer.new(name: 'Foo', id: '123')
+    end
+
+    it "should be valid" do
+      @manufacturer.must_be :valid?
+    end
+
+  end
+
+  describe 'fetching all manufacturers' do
+
+    before do
+      VCR.use_cassette('manufacturers all') do
+        @manufacturers = BudsGunShop::Manufacturer.all
       end
+    end
 
-      it "should create valid manufacturers" do
-        @manufacturers.each{|m| m.must_be :valid?}
-      end
-
+    it "should create valid manufacturers" do
+      @manufacturers.each{|m| m.must_be :valid?}
     end
 
   end
