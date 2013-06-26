@@ -1,23 +1,28 @@
 # -*- encoding: utf-8 -*-
 
+require 'virtus'
 require 'active_model'
 require 'mechanize'
 require 'andand'
 
 module BudsGunShop
   class Category
+    include Virtus
     include ActiveModel::Validations
 
-    attr_accessor :name, :id, :parent, :is_leaf, :children, :loaded
+    attribute :id,       String
+    attribute :name,     String
+    attribute :is_leaf,  Boolean
+    attribute :children, Array[Category]
+    attribute :loaded,   Boolean, default: false
 
     validates :id,   presence: true
 
-    def initialize(attrs={})
-      attrs.each{|a,v| send(a.to_s+'=', v) }
+    def initialize(*args, &blk)
       @is_leaf ||= false
       @children ||= []
       @loaded = @is_leaf || @children.any?
-      self
+      super
     end
 
     def to_a

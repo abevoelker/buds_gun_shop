@@ -121,7 +121,6 @@ class CategorySpec < MiniTest::Spec
 
         it "should return a list of all root categories" do
           @categories.size.must_equal 34
-          @categories.reject{|c| c.parent.nil?}.must_be_empty
         end
 
       end
@@ -140,7 +139,6 @@ class CategorySpec < MiniTest::Spec
 
         it "should return a list of all root categories" do
           @categories.size.must_equal 855
-          @categories.reject{|c| c.parent.nil?}.must_be_empty
         end
 
       end

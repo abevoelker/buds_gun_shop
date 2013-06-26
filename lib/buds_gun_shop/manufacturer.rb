@@ -1,19 +1,17 @@
+require 'virtus'
 require 'active_model'
 require 'mechanize'
 
 module BudsGunShop
   class Manufacturer
+    include Virtus
     include ActiveModel::Validations
 
-    attr_accessor :name, :id
+    attribute :id,   String
+    attribute :name, String
 
-    validates :name, presence: true
     validates :id,   presence: true
-
-    def initialize(attrs={})
-      attrs.each{|a,v| send(a.to_s+'=', v) }
-      self
-    end
+    validates :name, presence: true
 
     def self.all
       page = Celluloid::Actor[:session_pool].get("#{CATALOG_ROOT}/ajax/manufacturers_ajax.php")

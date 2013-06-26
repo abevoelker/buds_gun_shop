@@ -1,5 +1,6 @@
 # -*- encoding: utf-8 -*-
 
+require 'virtus'
 require 'active_model'
 require 'mechanize'
 require 'andand'
@@ -7,18 +8,21 @@ require 'money'
 
 module BudsGunShop
   class Product
+    include Virtus
     include ActiveModel::Validations
 
-    attr_accessor :name, :mfg_code, :upc, :item_no, :manufacturer,
-                  :condition, :in_stock, :price, :description,
-                  :specifications
+    attribute :item_no,        String
+    attribute :name,           String
+    attribute :mfg_code,       String
+    attribute :upc,            String
+    attribute :manufacturer,   String
+    attribute :condition,      String
+    attribute :in_stock,       Boolean, default: false
+    attribute :price,          Money
+    attribute :description,    String
+    attribute :specifications, Hash[String => String]
 
     validates :item_no, presence: true
-
-    def initialize(attrs={})
-      attrs.each{|a,v| send(a.to_s+'=', v) }
-      self
-    end
 
     def reload
       page = Celluloid::Actor[:session_pool].get("#{CATALOG_ROOT}/product_info.php/products_id/#{item_no}")
