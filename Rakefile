@@ -8,7 +8,7 @@ Rake::TestTask.new('spec:unit') do |t|
   t.pattern = "spec/**/*_spec.rb"
 end
 
-task :spec => ['spec:unit']
-task :default => :spec
+task spec: ['spec:unit']
+task default: :spec
 
 Bundler::GemHelper.install_tasks

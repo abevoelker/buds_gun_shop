@@ -24,7 +24,7 @@ class ManufacturerSpec < MiniTest::Spec
     describe 'built with just name' do
 
       before do
-        @manufacturer = BudsGunShop::Manufacturer.new(:name => 'Foo')
+        @manufacturer = BudsGunShop::Manufacturer.new(name: 'Foo')
       end
 
       it "should not be valid" do
@@ -36,7 +36,7 @@ class ManufacturerSpec < MiniTest::Spec
     describe 'built with just id' do
 
       before do
-        @manufacturer = BudsGunShop::Manufacturer.new(:id => '123')
+        @manufacturer = BudsGunShop::Manufacturer.new(id: '123')
       end
 
       it "should not be valid" do
@@ -48,7 +48,7 @@ class ManufacturerSpec < MiniTest::Spec
     describe 'built with name and id' do
 
       before do
-        @manufacturer = BudsGunShop::Manufacturer.new(:name => 'Foo', :id => '123')
+        @manufacturer = BudsGunShop::Manufacturer.new(name: 'Foo', id: '123')
       end
 
       it "should be valid" do

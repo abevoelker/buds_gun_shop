@@ -33,7 +33,7 @@ module BudsGunShop
       page = Celluloid::Actor[:session_pool].get("#{CATALOG_ROOT}/index.php/cPath/#{id}")
       products = []
       begin
-        next_pg = page.link_with(:text => "[Next >>]")
+        next_pg = page.link_with(text: "[Next >>]")
         products += BudsGunShop::Product.all_from_index_page(page)
         page = Celluloid::Actor[:session_pool].click(next_pg) if next_pg
       end while next_pg
@@ -64,7 +64,7 @@ module BudsGunShop
 
     def self.init_from_xml(xml)
       id, name, is_leaf = ['id', 'name', 'isleaf'].map{|n| xml.at(n).andand.text }
-      self.new(:name => name, :id => id, :is_leaf => is_leaf)
+      self.new(name: name, id: id, is_leaf: is_leaf)
     end
 
     def self.find_from_xml(xml, id)

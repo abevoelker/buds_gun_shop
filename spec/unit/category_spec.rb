@@ -26,7 +26,7 @@ class CategorySpec < MiniTest::Spec
       describe 'built with just name' do
 
         before do
-          @category = BudsGunShop::Category.new(:name => 'Foo')
+          @category = BudsGunShop::Category.new(name: 'Foo')
         end
 
         it "should not be valid" do
@@ -38,7 +38,7 @@ class CategorySpec < MiniTest::Spec
       describe 'built with just id' do
 
         before do
-          @category = BudsGunShop::Category.new(:id => '123')
+          @category = BudsGunShop::Category.new(id: '123')
         end
 
         it "should be valid" do
@@ -50,7 +50,7 @@ class CategorySpec < MiniTest::Spec
       describe 'built with name and id' do
 
         before do
-          @category = BudsGunShop::Category.new(:name => 'Foo', :id => '123')
+          @category = BudsGunShop::Category.new(name: 'Foo', id: '123')
         end
 
         it "should be valid" do
@@ -151,7 +151,7 @@ class CategorySpec < MiniTest::Spec
 
         before do
           VCR.use_cassette('category_alexander_arms_accessories_products') do
-            @category = BudsGunShop::Category.new(:id => "36_42_102")
+            @category = BudsGunShop::Category.new(id: "36_42_102")
             @products = @category.products
           end
         end
@@ -166,7 +166,7 @@ class CategorySpec < MiniTest::Spec
 
         before do
           VCR.use_cassette('category_adcor_defense_products') do
-            @category = BudsGunShop::Category.new(:id => "36_1037")
+            @category = BudsGunShop::Category.new(id: "36_1037")
             @products = @category.products
           end
         end
@@ -181,7 +181,7 @@ class CategorySpec < MiniTest::Spec
 
         before do
           VCR.use_cassette('category_1911s_products') do
-            @category = BudsGunShop::Category.new(:id => "21_1171")
+            @category = BudsGunShop::Category.new(id: "21_1171")
             @products = @category.products
           end
         end

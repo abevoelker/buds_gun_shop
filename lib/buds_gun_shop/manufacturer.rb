@@ -16,7 +16,7 @@ module BudsGunShop
     def self.all
       page = Celluloid::Actor[:session_pool].get("#{CATALOG_ROOT}/ajax/manufacturers_ajax.php")
       page.search('form select option').map do |e|
-        self.new(:id => e.attr(:value), :name => e.text.sub(/\(\d*\)\z/, '').strip)
+        self.new(id: e.attr(:value), name: e.text.sub(/\(\d*\)\z/, '').strip)
       end
     end
 

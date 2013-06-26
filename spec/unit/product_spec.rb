@@ -24,7 +24,7 @@ class ProductSpec < MiniTest::Spec
     describe 'built with just id' do
 
       before do
-        @product = BudsGunShop::Product.new(:id => 'foo')
+        @product = BudsGunShop::Product.new(id: 'foo')
       end
 
       it "should be valid" do
