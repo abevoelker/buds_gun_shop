@@ -30,12 +30,12 @@ module BudsGunShop
     end
 
     def products
-      page = Celluloid::Actor[:session_pool].get("#{CATALOG_ROOT}/index.php/cPath/#{id}")
+      page = Celluloid::Actor[:buds_gun_shop_session].get("#{CATALOG_ROOT}/index.php/cPath/#{id}")
       products = []
       begin
         next_pg = page.link_with(text: "[Next >>]")
         products += BudsGunShop::Product.all_from_index_page(page)
-        page = Celluloid::Actor[:session_pool].click(next_pg) if next_pg
+        page = Celluloid::Actor[:buds_gun_shop_session].click(next_pg) if next_pg
       end while next_pg
       products
     end
@@ -79,18 +79,18 @@ module BudsGunShop
     def self.find(id)
       parent = id.to_s.split('_')[-2]
       page = if parent
-               Celluloid::Actor[:session_pool].get("#{CATALOG_ROOT}/ajax/categories.php?cID=#{parent}")
+               Celluloid::Actor[:buds_gun_shop_session].get("#{CATALOG_ROOT}/ajax/categories.php?cID=#{parent}")
              else
-               Celluloid::Actor[:session_pool].get("#{CATALOG_ROOT}/ajax/categories.php")
+               Celluloid::Actor[:buds_gun_shop_session].get("#{CATALOG_ROOT}/ajax/categories.php")
              end
       find_from_xml(page, id)
     end
 
     def self.all(parent=nil)
       page = if parent
-               Celluloid::Actor[:session_pool].get("#{CATALOG_ROOT}/ajax/categories.php?cID=#{parent}")
+               Celluloid::Actor[:buds_gun_shop_session].get("#{CATALOG_ROOT}/ajax/categories.php?cID=#{parent}")
              else
-               Celluloid::Actor[:session_pool].get("#{CATALOG_ROOT}/ajax/categories.php")
+               Celluloid::Actor[:buds_gun_shop_session].get("#{CATALOG_ROOT}/ajax/categories.php")
              end
       all_from_xml(page)
     end

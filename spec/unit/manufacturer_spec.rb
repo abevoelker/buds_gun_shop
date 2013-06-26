@@ -4,7 +4,7 @@ describe BudsGunShop::Manufacturer do
 
   before do
     rate_limit = Celluloid::RateLimiter.new(100, 1)
-    Celluloid::Actor[:session_pool] = BudsGunShop::Session.pool(args: [rate_limit])
+    Celluloid::Actor[:buds_gun_shop_session] = BudsGunShop::Session.new(rate_limit)
   end
 
   describe 'built without any values' do

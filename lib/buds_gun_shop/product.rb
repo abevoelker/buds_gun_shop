@@ -25,7 +25,7 @@ module BudsGunShop
     validates :id, presence: true
 
     def reload
-      page = Celluloid::Actor[:session_pool].get("#{CATALOG_ROOT}/product_info.php/products_id/#{id}")
+      page = Celluloid::Actor[:buds_gun_shop_session].get("#{CATALOG_ROOT}/product_info.php/products_id/#{id}")
       return if page.at("td:contains('Product not found!')")
 
       main_table = page.at('#mainmain div table table table')
