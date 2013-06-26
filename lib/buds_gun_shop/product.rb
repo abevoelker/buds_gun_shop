@@ -11,7 +11,7 @@ module BudsGunShop
     include Virtus
     include ActiveModel::Validations
 
-    attribute :item_no,        String
+    attribute :id,             String
     attribute :name,           String
     attribute :mfg_code,       String
     attribute :upc,            String
@@ -22,10 +22,10 @@ module BudsGunShop
     attribute :description,    String
     attribute :specifications, Hash[String => String]
 
-    validates :item_no, presence: true
+    validates :id, presence: true
 
     def reload
-      page = Celluloid::Actor[:session_pool].get("#{CATALOG_ROOT}/product_info.php/products_id/#{item_no}")
+      page = Celluloid::Actor[:session_pool].get("#{CATALOG_ROOT}/product_info.php/products_id/#{id}")
       return if page.at("td:contains('Product not found!')")
 
       main_table = page.at('#mainmain div table table table')
@@ -58,7 +58,7 @@ module BudsGunShop
       attrs = ["Model:", "UPC:", "Bud's Item Number:", "MFG:", "Condition:"].map do |txt|
         page.at("span:contains(\"#{txt}\")").andand.next_element.andand.text.andand.strip
       end
-      [:mfg_code=, :upc=, :item_no=, :manufacturer=, :condition=].zip(attrs).each do |setter, val|
+      [:mfg_code=, :upc=, :id=, :manufacturer=, :condition=].zip(attrs).each do |setter, val|
         send(setter, val)
       end
 
@@ -69,12 +69,12 @@ module BudsGunShop
       condition == "Factory New"
     end
 
-    def self.find(item_no)
-      new(item_no: item_no).reload
+    def self.find(id)
+      new(id: id).reload
     end
 
     def self.init_from_url(url)
-      new(item_no: url.match(/\/products_id\/(\S+?)\//).captures[0])
+      new(id: url.match(/\/products_id\/(\S+?)\//).captures[0])
     end
 
     def self.all_from_index_page(page)
