@@ -20,7 +20,6 @@ Gem::Specification.new do |s|
   s.add_dependency "celluloid-rate_limit", "~> 0.0.1"
 
   s.add_development_dependency "bundler",    "~> 1.0"
-  s.add_development_dependency "minitest",   "~> 4.1"
   s.add_development_dependency "rspec",      "~> 2.11"
   s.add_development_dependency "rake",       "~> 0.9"
   s.add_development_dependency "webmock",    "~> 1.11"

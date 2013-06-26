@@ -16,7 +16,7 @@ describe BudsGunShop::Category do
       end
 
       it "should not be valid" do
-        @category.wont_be :valid?
+        expect(@category).not_to be_valid
       end
 
     end
@@ -28,7 +28,7 @@ describe BudsGunShop::Category do
       end
 
       it "should not be valid" do
-        @category.wont_be :valid?
+        expect(@category).not_to be_valid
       end
 
     end
@@ -40,7 +40,7 @@ describe BudsGunShop::Category do
       end
 
       it "should be valid" do
-        @category.must_be :valid?
+        expect(@category).to be_valid
       end
 
     end
@@ -52,7 +52,7 @@ describe BudsGunShop::Category do
       end
 
       it "should be valid" do
-        @category.must_be :valid?
+        expect(@category).to be_valid
       end
 
     end
@@ -69,9 +69,9 @@ describe BudsGunShop::Category do
       end
 
       it "should return exactly one category" do
-        @category.class.must_equal BudsGunShop::Category
-        @category.id.must_equal '21_1171'
-        @category.name.must_equal '1911s'
+        expect(@category).to be_a(BudsGunShop::Category)
+        expect(@category.id).to eq('21_1171')
+        expect(@category.name).to eq('1911s')
       end
     end
 
@@ -83,9 +83,9 @@ describe BudsGunShop::Category do
       end
 
       it "should return exactly one category" do
-        @category.class.must_equal BudsGunShop::Category
-        @category.id.must_equal '36_1037'
-        @category.name.must_equal 'Adcor Defense'
+        expect(@category).to be_a(BudsGunShop::Category)
+        expect(@category.id).to eq('36_1037')
+        expect(@category.name).to eq('Adcor Defense')
       end
     end
 
@@ -97,7 +97,7 @@ describe BudsGunShop::Category do
       end
 
       it "should be nil" do
-        @category.must_be :nil?
+        expect(@category).to be_nil
       end
     end
 
@@ -114,11 +114,13 @@ describe BudsGunShop::Category do
       end
 
       it "should create valid categories" do
-        @categories.each{|c| c.must_be :valid?}
+        @categories.each do |c|
+          expect(c).to be_valid
+        end
       end
 
       it "should return a list of all root categories" do
-        @categories.size.must_equal 34
+        expect(@categories.size).to eq(34)
       end
 
     end
@@ -132,11 +134,13 @@ describe BudsGunShop::Category do
       end
 
       it "should create valid categories" do
-        @categories.each{|c| c.must_be :valid?}
+        @categories.each do |c|
+          expect(c).to be_valid
+        end
       end
 
       it "should return a list of all root categories" do
-        @categories.size.must_equal 855
+        expect(@categories.size).to eq(855)
       end
 
     end
@@ -155,7 +159,7 @@ describe BudsGunShop::Category do
       end
 
       it "should return an empty array" do
-        @products.must_equal []
+        expect(@products).to eq([])
       end
 
     end
@@ -170,7 +174,7 @@ describe BudsGunShop::Category do
       end
 
       it "should only load the products on first page" do
-        @products.size.must_equal 7
+        expect(@products.size).to eq(7)
       end
 
     end
@@ -185,7 +189,7 @@ describe BudsGunShop::Category do
       end
 
       it "should load all 494 products" do
-        @products.size.must_equal 494
+        expect(@products.size).to eq(494)
       end
 
     end

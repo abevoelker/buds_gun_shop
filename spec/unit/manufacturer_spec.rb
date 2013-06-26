@@ -14,7 +14,7 @@ describe BudsGunShop::Manufacturer do
     end
 
     it "should not be valid" do
-      @manufacturer.wont_be :valid?
+      expect(@manufacturer).not_to be_valid
     end
 
   end
@@ -26,7 +26,7 @@ describe BudsGunShop::Manufacturer do
     end
 
     it "should not be valid" do
-      @manufacturer.wont_be :valid?
+      expect(@manufacturer).not_to be_valid
     end
 
   end
@@ -38,7 +38,7 @@ describe BudsGunShop::Manufacturer do
     end
 
     it "should not be valid" do
-      @manufacturer.wont_be :valid?
+      expect(@manufacturer).not_to be_valid
     end
 
   end
@@ -50,7 +50,7 @@ describe BudsGunShop::Manufacturer do
     end
 
     it "should be valid" do
-      @manufacturer.must_be :valid?
+      expect(@manufacturer).to be_valid
     end
 
   end
@@ -64,7 +64,9 @@ describe BudsGunShop::Manufacturer do
     end
 
     it "should create valid manufacturers" do
-      @manufacturers.each{|m| m.must_be :valid?}
+      @manufacturers.each do |m|
+        expect(m).to be_valid
+      end
     end
 
   end

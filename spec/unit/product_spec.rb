@@ -14,7 +14,7 @@ describe BudsGunShop::Product do
     end
 
     it "should not be valid" do
-      @product.wont_be :valid?
+      expect(@product).not_to be_valid
     end
 
   end
@@ -26,7 +26,7 @@ describe BudsGunShop::Product do
     end
 
     it "should be valid" do
-      @product.must_be :valid?
+      expect(@product).to be_valid
     end
 
   end
@@ -40,7 +40,7 @@ describe BudsGunShop::Product do
     end
 
     it "should be nil" do
-      @product.must_be :nil?
+      expect(@product).to be_nil
     end
 
   end
@@ -54,15 +54,11 @@ describe BudsGunShop::Product do
     end
 
     it "should show as in stock" do
-      @product.must_be :in_stock
+      expect(@product).to be_in_stock
     end
 
     it "should have a price" do
-      @product.price.must_equal Money.parse("$266.77")
-    end
-
-    it "should have a price" do
-      @product.price.must_equal Money.parse("$266.77")
+      expect(@product.price).to eq(Money.parse("$266.77"))
     end
 
   end
@@ -76,11 +72,11 @@ describe BudsGunShop::Product do
     end
 
     it "should expose correct condition value" do
-      @product.condition.must_equal "Factory New"
+      expect(@product.condition).to eq("Factory New")
     end
 
     it "should return true for new?" do
-      @product.must_be :new?
+      expect(@product).to be_new
     end
 
   end
@@ -94,7 +90,7 @@ describe BudsGunShop::Product do
     end
 
     it "should expose correct UPC value" do
-      @product.upc.must_equal "736676011032"
+      expect(@product.upc).to eq("736676011032")
     end
 
   end
@@ -108,7 +104,7 @@ describe BudsGunShop::Product do
     end
 
     it "should expose correct manufacturer value" do
-      @product.manufacturer.must_equal "Sturm, Ruger, & Co., Inc."
+      expect(@product.manufacturer).to eq("Sturm, Ruger, & Co., Inc.")
     end
 
   end
@@ -122,7 +118,7 @@ describe BudsGunShop::Product do
     end
 
     it "should show as out of stock" do
-      @product.wont_be :in_stock
+      expect(@product).not_to be_in_stock
     end
 
   end
@@ -135,9 +131,9 @@ describe BudsGunShop::Product do
     end
 
     it "should set specifications attribute" do
-      @product.specifications.size.must_equal 14
-      @product.specifications['Capacity'].must_equal '30 + 1'
-      @product.specifications['Caliber'].must_equal '223 Remington/5.56 NATO'
+      expect(@product.specifications.size).to eq(14)
+      expect(@product.specifications['Capacity']).to eq('30 + 1')
+      expect(@product.specifications['Caliber']).to eq('223 Remington/5.56 NATO')
     end
   end
 
@@ -149,9 +145,9 @@ describe BudsGunShop::Product do
     end
 
     it "should set specifications attribute properly" do
-      @product.specifications.size.must_equal 14
-      @product.specifications['Capacity'].must_equal 'Not Available'
-      @product.specifications['Caliber'].must_equal 'Not Available'
+      expect(@product.specifications.size).to eq(14)
+      expect(@product.specifications['Capacity']).to eq('Not Available')
+      expect(@product.specifications['Caliber']).to eq('Not Available')
     end
   end
 
@@ -164,7 +160,7 @@ describe BudsGunShop::Product do
     end
 
     it "should set specifications attribute to nil" do
-      @product.specifications.must_be :nil?
+      expect(@product.specifications).to be_nil
     end
   end
 
@@ -177,14 +173,14 @@ describe BudsGunShop::Product do
     end
 
     it "should parse correct product ID from a product URL" do
-      @product.id.must_equal "76044"
+      expect(@product.id).to eq("76044")
     end
 
     it "should not greedy match URLs" do
       @product = BudsGunShop::Product.init_from_url("http://www.budsgunshop.com/catalog/product_info.php/cPath" +
                                                     "/884/products_id/411550457/Overstock+Guns/LEGACY%20PUMA%2" +
                                                     "022LR%204.63/quot;%20REVOLVER%20WOOD%20GRIPS/")
-      @product.id.must_equal "411550457"
+      expect(@product.id).to eq("411550457")
     end
   end
 
@@ -197,15 +193,15 @@ describe BudsGunShop::Product do
     end
 
     it "should parse description properly" do
-      @product.description.must_match "FAMILY:SCAR Series"
-      @product.description.must_match "ADDL INFO:Ambidextrous Controls"
+      expect(@product.description).to match("FAMILY:SCAR Series")
+      expect(@product.description).to match("ADDL INFO:Ambidextrous Controls")
     end
 
     it "should parse specifications properly" do
-      @product.specifications.size.must_equal 14
-      @product.specifications['Finish'].must_equal 'Flat Dark Earth/Black Barrel'
-      @product.specifications['Caliber'].must_equal '308 Winchester'
-      @product.specifications['Weight'].must_equal '8 lbs'
+      expect(@product.specifications.size).to eq(14)
+      expect(@product.specifications['Finish']).to eq('Flat Dark Earth/Black Barrel')
+      expect(@product.specifications['Caliber']).to eq('308 Winchester')
+      expect(@product.specifications['Weight']).to eq('8 lbs')
     end
 
   end
@@ -219,14 +215,14 @@ describe BudsGunShop::Product do
     end
 
     it "should parse description properly" do
-      @product.description.must_match "Legacy Puma M-1873 .22 CALIBER REVOLVER, PCR187322W"
-      @product.description.must_match "With the frame size and weight of a Single Action Army revolver"
+      expect(@product.description).to match("Legacy Puma M-1873 .22 CALIBER REVOLVER, PCR187322W")
+      expect(@product.description).to match("With the frame size and weight of a Single Action Army revolver")
     end
 
     it "should parse specifications properly" do
-      @product.specifications.size.must_equal 9
-      @product.specifications['Type'].must_equal 'Revolver'
-      @product.specifications['Capacity'].must_equal '6'
+      expect(@product.specifications.size).to eq(9)
+      expect(@product.specifications['Type']).to eq('Revolver')
+      expect(@product.specifications['Capacity']).to eq('6')
     end
 
   end
