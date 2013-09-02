@@ -78,26 +78,27 @@ module BudsGunShop
 
     def self.find(id)
       parent = id.to_s.split('_')[-2]
-      page = if parent
-               Celluloid::Actor[:buds_gun_shop_agent].get("#{CATALOG_ROOT}/ajax/categories.php?cID=#{parent}")
-             else
-               Celluloid::Actor[:buds_gun_shop_agent].get("#{CATALOG_ROOT}/ajax/categories.php")
-             end
+      page = get_categories(parent)
       find_from_xml(page, id)
     end
 
     def self.all(parent=nil)
-      page = if parent
-               Celluloid::Actor[:buds_gun_shop_agent].get("#{CATALOG_ROOT}/ajax/categories.php?cID=#{parent}")
-             else
-               Celluloid::Actor[:buds_gun_shop_agent].get("#{CATALOG_ROOT}/ajax/categories.php")
-             end
+      page = get_categories(parent)
       all_from_xml(page)
     end
 
     def self.all_flattened
       all.map(&:to_a).flatten
     end
+
+    def self.get_categories(parent=nil)
+      if parent
+         Celluloid::Actor[:buds_gun_shop_agent].get("#{CATALOG_ROOT}/ajax/categories.php?cID=#{parent}")
+       else
+         Celluloid::Actor[:buds_gun_shop_agent].get("#{CATALOG_ROOT}/ajax/categories.php")
+       end
+    end
+    private_class_method :get_categories
 
   end
 end
