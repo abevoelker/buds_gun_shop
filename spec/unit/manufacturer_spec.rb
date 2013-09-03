@@ -56,20 +56,4 @@ describe BudsGunShop::Manufacturer do
 
   end
 
-  describe 'fetching all manufacturers' do
-
-    before do
-      VCR.use_cassette('manufacturers all') do
-        @manufacturers = BudsGunShop::Manufacturer.all
-      end
-    end
-
-    it "should create valid manufacturers" do
-      @manufacturers.each do |m|
-        expect(m).to be_valid
-      end
-    end
-
-  end
-
 end

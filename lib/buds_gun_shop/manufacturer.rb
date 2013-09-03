@@ -1,6 +1,5 @@
 require 'virtus'
 require 'active_model'
-require 'mechanize'
 
 module BudsGunShop
   class Manufacturer
@@ -12,13 +11,5 @@ module BudsGunShop
 
     validates :id,   presence: true
     validates :name, presence: true
-
-    def self.all
-      page = Celluloid::Actor[:buds_gun_shop_agent].get("#{CATALOG_ROOT}/ajax/manufacturers_ajax.php")
-      page.search('form select option').map do |e|
-        self.new(id: e.attr(:value), name: e.text.sub(/\(\d*\)\z/, '').strip)
-      end
-    end
-
   end
 end

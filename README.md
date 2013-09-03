@@ -18,5 +18,5 @@ rifles = BudsGunShop::Category.find(36)
 nugget = BudsGunShop::Product.find(411540200)
 all_products = all_categories.map(&:products).flatten
 
-manufacturers = BudsGunShop::Manufacturer.all
+manufacturers = Celluloid::Actor[:buds_gun_shop_agent].all_manufacturers
 ```
