@@ -11,7 +11,7 @@ describe BudsGunShop::Agent do
     describe 'fetching all' do
       before do
         VCR.use_cassette('manufacturers all') do
-          @manufacturers = @agent.all_manufacturers
+          @manufacturers = @agent.manufacturer.all
         end
       end
 
@@ -27,7 +27,7 @@ describe BudsGunShop::Agent do
     describe 'non-existent' do
       before do
         VCR.use_cassette('product invalid') do
-          @product = @agent.find_product(454564656)
+          @product = @agent.product.find(454564656)
         end
       end
 
@@ -39,7 +39,7 @@ describe BudsGunShop::Agent do
     describe 'in-stock' do
       before do
         VCR.use_cassette('product Ruger 10-22') do
-          @product = @agent.find_product(70280)
+          @product = @agent.product.find(70280)
         end
       end
 
@@ -55,7 +55,7 @@ describe BudsGunShop::Agent do
     describe 'condition: new' do
       before do
         VCR.use_cassette('product Ruger 10-22') do
-          @product = @agent.find_product(70280)
+          @product = @agent.product.find(70280)
         end
       end
 
@@ -71,7 +71,7 @@ describe BudsGunShop::Agent do
     describe 'with UPC' do
       before do
         VCR.use_cassette('product Ruger 10-22') do
-          @product = @agent.find_product(70280)
+          @product = @agent.product.find(70280)
         end
       end
 
@@ -83,7 +83,7 @@ describe BudsGunShop::Agent do
     describe 'with manufacturer' do
       before do
         VCR.use_cassette('product Ruger 10-22') do
-          @product = @agent.find_product(70280)
+          @product = @agent.product.find(70280)
         end
       end
 
@@ -95,7 +95,7 @@ describe BudsGunShop::Agent do
     describe 'out of stock' do
       before do
         VCR.use_cassette('product FS-2000') do
-          @product = @agent.find_product(4461)
+          @product = @agent.product.find(4461)
         end
       end
 
@@ -107,7 +107,7 @@ describe BudsGunShop::Agent do
     describe 'with specifications section' do
       before do
         VCR.use_cassette('product FS-2000') do
-          @product = @agent.find_product(4461)
+          @product = @agent.product.find(4461)
         end
       end
 
@@ -121,7 +121,7 @@ describe BudsGunShop::Agent do
     describe 'with extra "Specifications" word above table' do
       before do
         VCR.use_cassette('product adcor bear') do
-          @product = @agent.find_product(411552563)
+          @product = @agent.product.find(411552563)
         end
       end
 
@@ -135,7 +135,7 @@ describe BudsGunShop::Agent do
     describe 'without specifications section' do
       before do
         VCR.use_cassette('product 5.11 socks') do
-          @product = @agent.find_product(311009027)
+          @product = @agent.product.find(311009027)
         end
       end
 
@@ -147,7 +147,7 @@ describe BudsGunShop::Agent do
     describe 'with description and specifications outside white background' do
       before do
         VCR.use_cassette('product FN SCAR') do
-          @product = @agent.find_product(62606)
+          @product = @agent.product.find(62606)
         end
       end
 
@@ -167,7 +167,7 @@ describe BudsGunShop::Agent do
     describe 'with all product info inside the white background' do
       before do
         VCR.use_cassette('product puma revolver') do
-          @product = @agent.find_product(411550457)
+          @product = @agent.product.find(411550457)
         end
       end
 

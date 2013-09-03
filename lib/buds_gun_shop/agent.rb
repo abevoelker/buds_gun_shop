@@ -23,15 +23,42 @@ module BudsGunShop
       @agent.click(*args, &blk)
     end
 
-    def all_manufacturers
-      page = get("#{CATALOG_ROOT}/ajax/manufacturers_ajax.php")
-      Manufacturer::Mapper.load(page)
+    def manufacturer
+      ManufacturerContext.new(Celluloid::Actor.current)
     end
 
-    def find_product(id)
-      page = get("#{CATALOG_ROOT}/product_info.php/products_id/#{id}")
-      Product::Mapper.load(page)
+    def product
+      ProductContext.new(Celluloid::Actor.current)
     end
+  end
+end
 
+module BudsGunShop
+  class Agent
+    class ManufacturerContext
+      def initialize(agent)
+        @agent = agent
+      end
+
+      def all
+        page = @agent.get("#{CATALOG_ROOT}/ajax/manufacturers_ajax.php")
+        Manufacturer::Mapper.load(page)
+      end
+    end
+  end
+end
+
+module BudsGunShop
+  class Agent
+    class ProductContext
+      def initialize(agent)
+        @agent = agent
+      end
+
+      def find(id)
+        page = @agent.get("#{CATALOG_ROOT}/product_info.php/products_id/#{id}")
+        Product::Mapper.load(page)
+      end
+    end
   end
 end
