@@ -15,7 +15,7 @@ root_categories = BudsGunShop::Category.all
 all_categories = BudsGunShop::Category.all_flattened
 rifles = BudsGunShop::Category.find(36)
 
-nugget = BudsGunShop::Product.find(411540200)
+nugget = Celluloid::Actor[:buds_gun_shop_agent].find_product(411540200)
 all_products = all_categories.map(&:products).flatten
 
 manufacturers = Celluloid::Actor[:buds_gun_shop_agent].all_manufacturers

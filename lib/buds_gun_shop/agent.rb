@@ -2,6 +2,7 @@ require 'celluloid/autostart'
 require 'celluloid/rate_limit'
 require 'mechanize'
 require 'buds_gun_shop/manufacturer/mapper'
+require 'buds_gun_shop/product/mapper'
 
 module BudsGunShop
   class Agent
@@ -26,5 +27,11 @@ module BudsGunShop
       page = get("#{CATALOG_ROOT}/ajax/manufacturers_ajax.php")
       Manufacturer::Mapper.load(page)
     end
+
+    def find_product(id)
+      page = get("#{CATALOG_ROOT}/product_info.php/products_id/#{id}")
+      Product::Mapper.load(page)
+    end
+
   end
 end

@@ -34,7 +34,7 @@ module BudsGunShop
       products = []
       begin
         next_pg = page.link_with(text: "[Next >>]")
-        products += BudsGunShop::Product.all_from_index_page(page)
+        products += BudsGunShop::Product::Mapper.all_from_index_page(page)
         page = Celluloid::Actor[:buds_gun_shop_agent].click(next_pg) if next_pg
       end while next_pg
       products
